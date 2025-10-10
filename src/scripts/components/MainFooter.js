@@ -197,7 +197,7 @@ class MainFooter {
         console.log('🔧 MainFooter v3.0.0: Sin enlaces de navegación');
         return `
             <div class="footer__section">
-                <h4 class="footer__section-title">Enlaces Rápidos</h4>
+                <h4 class="footer__section-title" data-translate="footer.quick_links">Enlaces Rápidos</h4>
                 <div style="display: flex; flex-direction: column; gap: 8px;">
                     ${this.renderLinksAsDivs()}
                 </div>
@@ -212,7 +212,7 @@ class MainFooter {
     renderSocialSection() {
         return `
             <div class="footer__section">
-                <h4 class="footer__section-title">Redes Sociales</h4>
+                <h4 class="footer__section-title" data-translate="footer.social_media">Redes Sociales</h4>
                 <div class="footer__social">
                     ${this.renderSocialLinks()}
                 </div>

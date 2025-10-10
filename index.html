@@ -145,18 +145,18 @@
                 <div class="hero__content">
                     <div class="hero__badge">
                         <div class="hero__badge-icon">🔬</div>
-                        <span>Investigación Médica Avanzada</span>
+                        <span data-translate="home.hero.badge">Investigación Médica Avanzada</span>
                     </div>
-                    <h1 id="hero-title" class="hero__title">Accede a Investigaciones Médicas Confiables en un Solo Lugar</h1>
-                    <p class="hero__subtitle">Busca artículos, ensayos clínicos y revisiones científicas en segundos. Base de datos médica confiable con acceso global.</p>
+                    <h1 id="hero-title" class="hero__title" data-translate="home.hero.title">Accede a Investigaciones Médicas Confiables en un Solo Lugar</h1>
+                    <p class="hero__subtitle" data-translate="home.hero.subtitle">Busca artículos, ensayos clínicos y revisiones científicas en segundos. Base de datos médica confiable con acceso global.</p>
                     <div class="hero__actions">
                         <a href="#buscar" class="btn btn--primary btn--lg" onclick="scrollToSection('buscar')" aria-describedby="hero-description">
                             <span class="btn__icon">🔍</span>
-                            Buscar Ahora
+                            <span data-translate="home.hero.cta_primary">Buscar Ahora</span>
                         </a>
                         <a href="#demo" class="btn btn--secondary btn--lg" onclick="scrollToSection('demo')" aria-describedby="hero-description">
                             <span class="btn__icon">📊</span>
-                            Explorar Base de Datos
+                            <span data-translate="home.hero.cta_secondary">Explorar Base de Datos</span>
                         </a>
                     </div>
                     <p id="hero-description" class="sr-only">Botones para buscar investigaciones médicas y explorar la base de datos</p>
@@ -172,31 +172,31 @@
         <!-- Benefits Section -->
         <section class="section section--bg-primary" aria-labelledby="benefits-title">
             <div class="container">
-                <h2 id="benefits-title" class="section__title">¿Por qué elegir Galarraga Research?</h2>
-                <p class="section__subtitle">Herramientas avanzadas para profesionales de la salud e investigadores</p>
+                <h2 id="benefits-title" class="section__title" data-translate="home.benefits.title">¿Por qué elegir Galarraga Research?</h2>
+                <p class="section__subtitle" data-translate="home.benefits.subtitle">Herramientas avanzadas para profesionales de la salud e investigadores</p>
                 <div class="benefits-grid">
                     <div class="card card--benefit">
                         <div class="card__icon">
                             <i class="fas fa-search" aria-hidden="true"></i>
                         </div>
-                        <h3 class="card__title">Búsqueda Avanzada</h3>
-                        <p class="card__description">Filtra por especialidad, tipo de estudio, fecha y más. Encuentra exactamente lo que necesitas.</p>
+                        <h3 class="card__title" data-translate="home.benefits.advanced_search.title">Búsqueda Avanzada</h3>
+                        <p class="card__description" data-translate="home.benefits.advanced_search.description">Filtra por especialidad, tipo de estudio, fecha y más. Encuentra exactamente lo que necesitas.</p>
                     </div>
                     
                     <div class="card card--benefit">
                         <div class="card__icon">
                             <i class="fas fa-shield-alt" aria-hidden="true"></i>
                         </div>
-                        <h3 class="card__title">Información Confiable</h3>
-                        <p class="card__description">Todos los artículos son revisados por expertos y provienen de fuentes médicas reconocidas.</p>
+                        <h3 class="card__title" data-translate="home.benefits.reliable_info.title">Información Confiable</h3>
+                        <p class="card__description" data-translate="home.benefits.reliable_info.description">Todos los artículos son revisados por expertos y provienen de fuentes médicas reconocidas.</p>
                     </div>
                     
                     <div class="card card--benefit">
                         <div class="card__icon">
                             <i class="fas fa-globe" aria-hidden="true"></i>
                         </div>
-                        <h3 class="card__title">Acceso Global</h3>
-                        <p class="card__description">Disponible en múltiples idiomas con contenido de instituciones médicas de todo el mundo.</p>
+                        <h3 class="card__title" data-translate="home.benefits.global_access.title">Acceso Global</h3>
+                        <p class="card__description" data-translate="home.benefits.global_access.description">Disponible en múltiples idiomas con contenido de instituciones médicas de todo el mundo.</p>
                     </div>
                 </div>
             </div>
@@ -206,16 +206,16 @@
         <section id="demo" class="search" aria-labelledby="demo-title">
             <div class="search__container">
                 <div class="search__header">
-                    <h2 id="demo-title" class="search__title text-contrast-high">Prueba Nuestro Buscador</h2>
-                    <p class="search__subtitle text-contrast-medium">Explora nuestra base de datos con más de 50,000 artículos médicos</p>
+                    <h2 id="demo-title" class="search__title text-contrast-high" data-translate="home.demo.title">Prueba Nuestro Buscador</h2>
+                    <p class="search__subtitle text-contrast-medium" data-translate="home.demo.subtitle">Explora nuestra base de datos con más de 50,000 artículos médicos</p>
                 </div>
                 
                 <div class="search__form">
                     <div class="search__input-container">
-                        <input type="text" id="search-input" class="search__input input-contrast-high" placeholder="Busca por palabra clave: diabetes, cáncer, COVID-19..." aria-label="Buscar investigaciones médicas">
+                        <input type="text" id="search-input" class="search__input input-contrast-high" data-translate-placeholder="home.demo.placeholder" placeholder="Busca por palabra clave: diabetes, cáncer, COVID-19..." aria-label="Buscar investigaciones médicas">
                         <button class="search__button btn-contrast-high" onclick="performSearch()">
                             <span class="search__button-icon icon-contrast-high">🔍</span>
-                            Buscar
+                            <span data-translate="home.demo.button">Buscar</span>
                         </button>
                     </div>
                 </div>
@@ -273,17 +273,17 @@
         <!-- Trust Section -->
         <section class="section section--bg-primary" aria-labelledby="trust-title">
             <div class="container">
-                <h2 id="trust-title" class="section__title">Confianza de Profesionales</h2>
-                <p class="section__subtitle">Médicos, investigadores y estudiantes confían en nuestra plataforma</p>
+                <h2 id="trust-title" class="section__title" data-translate="home.testimonials.title">Confianza de Profesionales</h2>
+                <p class="section__subtitle" data-translate="home.testimonials.subtitle">Médicos, investigadores y estudiantes confían en nuestra plataforma</p>
                 
                 <div class="testimonials-grid">
                     <div class="card card--testimonial">
                         <div class="testimonial-content">
-                            <p class="testimonial-text">"Galarraga Research ha revolucionado mi forma de buscar literatura médica. La interfaz es intuitiva y los resultados son siempre relevantes."</p>
+                            <p class="testimonial-text" data-translate="home.testimonials.testimonial1.quote">"Galarraga Research ha revolucionado mi forma de buscar literatura médica. La interfaz es intuitiva y los resultados son siempre relevantes."</p>
                             <div class="testimonial-author">
                                 <div class="author-info">
-                                    <h4 class="author-name">Dr. Ana Martínez</h4>
-                                    <p class="author-title">Cardióloga, Hospital General</p>
+                                    <h4 class="author-name" data-translate="home.testimonials.testimonial1.author">Dr. Ana Martínez</h4>
+                                    <p class="author-title" data-translate="home.testimonials.testimonial1.role">Cardióloga, Hospital General</p>
                                 </div>
                             </div>
                         </div>
@@ -291,11 +291,11 @@
                     
                     <div class="card card--testimonial">
                         <div class="testimonial-content">
-                            <p class="testimonial-text">"Como estudiante de medicina, esta plataforma me ha ayudado a encontrar los artículos más actualizados para mis investigaciones."</p>
+                            <p class="testimonial-text" data-translate="home.testimonials.testimonial2.quote">"Como estudiante de medicina, esta plataforma me ha ayudado a encontrar los artículos más actualizados para mis investigaciones."</p>
                             <div class="testimonial-author">
                                 <div class="author-info">
-                                    <h4 class="author-name">Carlos Rodríguez</h4>
-                                    <p class="author-title">Estudiante de Medicina, UNAM</p>
+                                    <h4 class="author-name" data-translate="home.testimonials.testimonial2.author">Carlos Rodríguez</h4>
+                                    <p class="author-title" data-translate="home.testimonials.testimonial2.role">Estudiante de Medicina, UNAM</p>
                                 </div>
                             </div>
                         </div>
@@ -303,11 +303,11 @@
                     
                     <div class="card card--testimonial">
                         <div class="testimonial-content">
-                            <p class="testimonial-text">"La calidad de los artículos y la facilidad de búsqueda hacen que Galarraga Research sea mi primera opción."</p>
+                            <p class="testimonial-text" data-translate="home.testimonials.testimonial3.quote">"La calidad de los artículos y la facilidad de búsqueda hacen que Galarraga Research sea mi primera opción."</p>
                             <div class="testimonial-author">
                                 <div class="author-info">
-                                    <h4 class="author-name">Dr. Laura González</h4>
-                                    <p class="author-title">Investigadora, Instituto Nacional</p>
+                                    <h4 class="author-name" data-translate="home.testimonials.testimonial3.author">Dr. Laura González</h4>
+                                    <p class="author-title" data-translate="home.testimonials.testimonial3.role">Investigadora, Instituto Nacional</p>
                                 </div>
                             </div>
                         </div>
@@ -319,30 +319,30 @@
         <!-- CTA Section -->
         <section class="section section--bg-gradient" aria-labelledby="cta-title">
             <div class="container">
-                <h2 id="cta-title" class="section__title">Empieza tu Investigación Médica Hoy</h2>
-                <p class="section__subtitle">Únete a miles de profesionales que ya confían en nuestra plataforma</p>
+                <h2 id="cta-title" class="section__title" data-translate="home.cta.title">Empieza tu Investigación Médica Hoy</h2>
+                <p class="section__subtitle" data-translate="home.cta.subtitle">Únete a miles de profesionales que ya confían en nuestra plataforma</p>
                 
                 <div class="cta-actions">
                     <button class="btn btn--primary btn--lg" onclick="scrollToSection('buscar')">
                         <i class="fas fa-search" aria-hidden="true"></i>
-                        Comenzar Búsqueda
+                        <span data-translate="home.cta.button_search">Comenzar Búsqueda</span>
                     </button>
                     <button class="btn btn--outline btn--lg" onclick="showEmailSignup()">
                         <i class="fas fa-envelope" aria-hidden="true"></i>
-                        Recibir Alertas
+                        <span data-translate="home.cta.button_alerts">Recibir Alertas</span>
                     </button>
                 </div>
                 
                 <div class="email-signup" id="email-signup" style="display: none;">
                     <form class="signup-form" onsubmit="handleEmailSignup(event)">
                         <div class="form-group">
-                            <input type="email" id="email" name="email" class="form__input" placeholder="Tu correo electrónico" required>
+                            <input type="email" id="email" name="email" class="form__input" data-translate-placeholder="home.cta.email_placeholder" placeholder="Tu correo electrónico" required>
                             <button type="submit" class="btn btn--primary">
                                 <i class="fas fa-paper-plane" aria-hidden="true"></i>
-                                Suscribirse
+                                <span data-translate="home.cta.email_submit">Suscribirse</span>
                             </button>
                         </div>
-                        <p class="signup-note">Recibe alertas sobre nuevos artículos en tu especialidad</p>
+                        <p class="signup-note" data-translate="home.cta.email_note">Recibe alertas sobre nuevos artículos en tu especialidad</p>
                     </form>
                 </div>
             </div>
@@ -352,8 +352,8 @@
         <section id="contacto" class="section section--bg-inverse" aria-labelledby="contact-title" style="background: #ffffff !important; color: #2c3e50 !important; padding: 80px 0 0 0 !important;">
             <div class="container">
                 <div class="section__header">
-                    <h2 id="contact-title" class="section__title" style="color: #2c3e50 !important; font-weight: 700 !important; font-size: 42px !important; margin-bottom: 20px !important;">Contacto</h2>
-                    <p class="section__subtitle" style="color: #34495e !important; font-weight: 400 !important; font-size: 18px !important; margin-bottom: 50px !important;">¿Tienes preguntas sobre nuestros servicios de pediatría infantil? Estamos aquí para cuidar la salud de tu pequeño.</p>
+                    <h2 id="contact-title" class="section__title" data-translate="home.contact.title" style="color: #2c3e50 !important; font-weight: 700 !important; font-size: 42px !important; margin-bottom: 20px !important;">Contacto</h2>
+                    <p class="section__subtitle" data-translate="home.contact.subtitle" style="color: #34495e !important; font-weight: 400 !important; font-size: 18px !important; margin-bottom: 50px !important;">¿Tienes preguntas sobre nuestros servicios de pediatría infantil? Estamos aquí para cuidar la salud de tu pequeño.</p>
                 </div>
                 
                 <!-- Información de contacto -->
@@ -363,17 +363,17 @@
                         <!-- Columna 1 -->
                         <div>
                             <div style="margin-bottom: 25px !important;">
-                                <h3 style="color: #2c3e50 !important; font-size: 16px !important; font-weight: 700 !important; margin-bottom: 8px !important; text-transform: uppercase !important; letter-spacing: 0.5px !important;">🏥 Clínica Pediátrica</h3>
+                                <h3 data-translate="home.contact.clinic.title" style="color: #2c3e50 !important; font-size: 16px !important; font-weight: 700 !important; margin-bottom: 8px !important; text-transform: uppercase !important; letter-spacing: 0.5px !important;">🏥 Clínica Pediátrica</h3>
                                 <p style="color: #34495e !important; font-size: 15px !important; font-weight: 500 !important; line-height: 1.5 !important; margin: 0 !important;">1996 SW 1st St.<br>Miami FL 33135</p>
                             </div>
 
                             <div style="margin-bottom: 25px !important;">
-                                <h3 style="color: #2c3e50 !important; font-size: 16px !important; font-weight: 700 !important; margin-bottom: 8px !important; text-transform: uppercase !important; letter-spacing: 0.5px !important;">📞 Consultas Pediátricas</h3>
+                                <h3 data-translate="home.contact.consultations.title" style="color: #2c3e50 !important; font-size: 16px !important; font-weight: 700 !important; margin-bottom: 8px !important; text-transform: uppercase !important; letter-spacing: 0.5px !important;">📞 Consultas Pediátricas</h3>
                                 <p style="color: #34495e !important; font-size: 15px !important; font-weight: 500 !important; line-height: 1.5 !important; margin: 0 !important;">PH. 305.649.7663</p>
                             </div>
 
                             <div style="margin-bottom: 25px !important;">
-                                <h3 style="color: #2c3e50 !important; font-size: 16px !important; font-weight: 700 !important; margin-bottom: 8px !important; text-transform: uppercase !important; letter-spacing: 0.5px !important;">📠 Fax Médico</h3>
+                                <h3 data-translate="home.contact.fax.title" style="color: #2c3e50 !important; font-size: 16px !important; font-weight: 700 !important; margin-bottom: 8px !important; text-transform: uppercase !important; letter-spacing: 0.5px !important;">📠 Fax Médico</h3>
                                 <p style="color: #34495e !important; font-size: 15px !important; font-weight: 500 !important; line-height: 1.5 !important; margin: 0 !important;">FAX. 305.541.2735</p>
                             </div>
                         </div>
@@ -381,17 +381,17 @@
                         <!-- Columna 2 -->
                         <div>
                             <div style="margin-bottom: 25px !important;">
-                                <h3 style="color: #2c3e50 !important; font-size: 16px !important; font-weight: 700 !important; margin-bottom: 8px !important; text-transform: uppercase !important; letter-spacing: 0.5px !important;">✉️ Email Pediátrico</h3>
+                                <h3 data-translate="home.contact.email.title" style="color: #2c3e50 !important; font-size: 16px !important; font-weight: 700 !important; margin-bottom: 8px !important; text-transform: uppercase !important; letter-spacing: 0.5px !important;">✉️ Email Pediátrico</h3>
                                 <p style="color: #34495e !important; font-size: 15px !important; font-weight: 500 !important; line-height: 1.5 !important; margin: 0 !important;">info@galarragamd.com</p>
                             </div>
 
                             <div style="margin-bottom: 25px !important;">
-                                <h3 style="color: #2c3e50 !important; font-size: 16px !important; font-weight: 700 !important; margin-bottom: 8px !important; text-transform: uppercase !important; letter-spacing: 0.5px !important;">🌐 Portal Pediátrico</h3>
+                                <h3 data-translate="home.contact.portal.title" style="color: #2c3e50 !important; font-size: 16px !important; font-weight: 700 !important; margin-bottom: 8px !important; text-transform: uppercase !important; letter-spacing: 0.5px !important;">🌐 Portal Pediátrico</h3>
                                 <p style="color: #34495e !important; font-size: 15px !important; font-weight: 500 !important; line-height: 1.5 !important; margin: 0 !important;">www.galarragamd.com</p>
                             </div>
 
                             <div style="margin-bottom: 25px !important;">
-                                <h3 style="color: #2c3e50 !important; font-size: 16px !important; font-weight: 700 !important; margin-bottom: 8px !important; text-transform: uppercase !important; letter-spacing: 0.5px !important;">⏰ Horarios de Atención</h3>
+                                <h3 data-translate="home.contact.hours.title" style="color: #2c3e50 !important; font-size: 16px !important; font-weight: 700 !important; margin-bottom: 8px !important; text-transform: uppercase !important; letter-spacing: 0.5px !important;">⏰ Horarios de Atención</h3>
                                 <p style="color: #34495e !important; font-size: 15px !important; font-weight: 500 !important; line-height: 1.5 !important; margin: 0 !important;">Lun-Vie: 9:00am - 5:00pm<br>Sáb: 9:00am - 1:00pm (alternos)</p>
                             </div>
                         </div>
@@ -416,6 +416,7 @@
                 <div class="map-overlay" style="position: absolute !important; top: 10px !important; right: 10px !important; z-index: 1000 !important;">
                     <a href="https://maps.app.goo.gl/cq8oyGsKXgPR21E67" 
                        target="_blank" 
+                       data-translate="home.contact.map_button"
                        style="background: rgba(255, 255, 255, 0.95) !important; color: #2c3e50 !important; text-decoration: none !important; font-size: 14px !important; font-weight: 500 !important; padding: 8px 16px !important; border-radius: 6px !important; border: 1px solid #dee2e6 !important; display: inline-block !important; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15) !important; transition: all 0.3s ease !important;">
                         📍 Ver mapa grande
                     </a>
