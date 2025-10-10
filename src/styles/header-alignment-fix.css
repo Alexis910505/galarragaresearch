@@ -1,0 +1,137 @@
+/**
+ * Header Alignment Fix
+ * Solución específica para alineación del último elemento de navegación
+ */
+
+/* Forzar aplicación inmediata de estilos */
+.header__nav-list,
+.header__nav-list li,
+.header__nav-link {
+  height: 60px !important;
+  display: flex !important;
+  align-items: center !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  vertical-align: middle !important;
+  line-height: 1 !important;
+  white-space: nowrap !important;
+}
+
+/* Específico para pantallas normales (desktop) */
+@media (min-width: 1025px) {
+  .header__nav-list {
+    height: 60px !important;
+    display: flex !important;
+    align-items: center !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  .header__nav-list li {
+    height: 60px !important;
+    display: flex !important;
+    align-items: center !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    vertical-align: middle !important;
+  }
+  
+  .header__nav-link {
+    height: 60px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 0 !important;
+    padding: 0 16px !important;
+    vertical-align: middle !important;
+    line-height: 1 !important;
+    white-space: nowrap !important;
+  }
+}
+
+/* Resetear y forzar alineación de todos los elementos de navegación */
+.header__nav-list {
+  height: 60px !important;
+  display: flex !important;
+  align-items: center !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.header__nav-list li {
+  height: 60px !important;
+  display: flex !important;
+  align-items: center !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  vertical-align: middle !important;
+}
+
+.header__nav-list li:last-child {
+  height: 60px !important;
+  display: flex !important;
+  align-items: center !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  vertical-align: middle !important;
+}
+
+.header__nav-link {
+  height: 60px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin: 0 !important;
+  padding: 0 16px !important;
+  vertical-align: middle !important;
+  line-height: 1 !important;
+  white-space: nowrap !important;
+}
+
+.header__nav-list li:last-child .header__nav-link {
+  height: 60px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin: 0 !important;
+  padding: 0 16px !important;
+  vertical-align: middle !important;
+  line-height: 1 !important;
+  white-space: nowrap !important;
+}
+
+/* Sobrescribir media queries problemáticas */
+@media (max-width: 1200px) {
+  .header__nav-list {
+    height: 60px !important;
+    gap: var(--space-5) !important;
+  }
+  
+  .header__nav-link {
+    height: 60px !important;
+    padding: 0 16px !important;
+    font-size: var(--font-size-base) !important;
+  }
+}
+
+/* Asegurar que funcione en todas las pantallas */
+@media (min-width: 769px) {
+  .header__nav-list {
+    height: 60px !important;
+    display: flex !important;
+    align-items: center !important;
+  }
+  
+  .header__nav-list li {
+    height: 60px !important;
+    display: flex !important;
+    align-items: center !important;
+  }
+  
+  .header__nav-link {
+    height: 60px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+}

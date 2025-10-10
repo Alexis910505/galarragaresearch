@@ -1,0 +1,243 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "close": "Close",
+    "save": "Save",
+    "cancel": "Cancel",
+    "continue": "Continue",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "search": "Search",
+    "contact": "Contact",
+    "home": "Home"
+  },
+  "header": {
+    "logo": "Galarraga Research",
+    "tagline": "Access reliable medical research in one place",
+    "language": "Language",
+    "menu": "Menu",
+    "close_menu": "Close menu",
+    "navigation": {
+      "home": "Home",
+      "search": "Search",
+      "contact": "Contact",
+      "patient_rights": "Patient Rights",
+      "lead_screening": "Lead Screening",
+      "vip_pcmh": "VIP PCMH",
+      "patient_medical_home": "Patient Medical Home"
+    }
+  },
+  "footer": {
+    "company": "Galarraga Research",
+    "description": "Access reliable medical research in one place",
+    "quick_links": "Quick Links",
+    "social_media": "Social Media",
+    "copyright": "Copyright © 2024 Yolanda A. Galarraga Ramirez MD PA - All rights reserved",
+    "developed": "Developed by Centralized Code LLC",
+    "links": {
+      "home": "Home",
+      "search": "Search",
+      "contact": "Contact",
+      "patient_rights": "Patient Rights",
+      "lead_screening": "Lead Screening",
+      "vip_pcmh": "VIP PCMH",
+      "patient_medical_home": "Patient Medical Home"
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "Welcome to Galarraga Research",
+      "subtitle": "Your trusted source for medical research and health resources",
+      "cta": "Explore Research"
+    },
+    "features": {
+      "title": "Our Services",
+      "research": {
+        "title": "Medical Research",
+        "description": "Access the latest medical research and clinical studies"
+      },
+      "resources": {
+        "title": "Health Resources",
+        "description": "Find reliable information about health and wellness"
+      },
+      "support": {
+        "title": "Specialized Support",
+        "description": "Receive support from specialized medical professionals"
+      }
+    }
+  },
+  "patient_medical_home": {
+    "title": "What is a Patient Medical Home?",
+    "subtitle": "Discover how the Patient Medical Home model transforms healthcare delivery to provide comprehensive, coordinated, and patient-centered care.",
+    "sections": {
+      "understanding": {
+        "title": "Understanding the Patient Medical Home",
+        "content1": "A Patient Medical Home (PMH) is a healthcare delivery model that provides comprehensive, coordinated, and patient-centered care. It serves as the central hub for all of a patient's healthcare needs, ensuring continuity, accessibility, and quality in care delivery.",
+        "content2": "The PMH model emphasizes the importance of building strong relationships between patients and their healthcare providers, fostering trust, communication, and collaboration in the care process."
+      },
+      "features": {
+        "title": "Key Features of the Patient Medical Home",
+        "items": {
+          "comprehensive": {
+            "title": "Comprehensive Care",
+            "content": "Addresses most of each patient's physical and mental healthcare needs, including prevention and wellness, acute care, and chronic care."
+          },
+          "patient_centered": {
+            "title": "Patient-Centered",
+            "content": "Provides healthcare that is respectful of and responsive to individual patient preferences, needs, and values."
+          },
+          "coordinated": {
+            "title": "Coordinated Care",
+            "content": "Coordinates care across all elements of the broader healthcare system, including specialty care, hospitals, home healthcare, and community services."
+          },
+          "accessible": {
+            "title": "Accessible Services",
+            "content": "Offers accessible services with shorter waiting times for urgent needs, enhanced in-person hours, 24/7 telephone or electronic access to a member of the care team."
+          },
+          "quality": {
+            "title": "Quality and Safety",
+            "content": "Committed to quality improvement and evidence-based medicine, using clinical decision support tools and participating in performance measurement and improvement."
+          },
+          "team_based": {
+            "title": "Team-Based Care",
+            "content": "Led by physicians, physician assistants, or nurse practitioners who work together with other healthcare professionals to provide comprehensive care."
+          }
+        }
+      },
+      "benefits": {
+        "title": "Benefits of the Patient Medical Home",
+        "items": [
+          "Better health outcomes for patients",
+          "Better care coordination among providers",
+          "Higher patient satisfaction and experience",
+          "Reduced healthcare costs and hospital readmissions",
+          "Greater focus on prevention and wellness",
+          "Better management of chronic conditions",
+          "Improved communication between patients and providers",
+          "Greater access to care and services",
+          "Greater emphasis on patient education and self-care",
+          "Optimized healthcare delivery processes"
+        ]
+      },
+      "implementation": {
+        "title": "How the PMH Works",
+        "subsections": {
+          "coordinator": {
+            "title": "Primary Care Provider as Coordinator",
+            "content": "The primary care provider serves as the central coordinator, ensuring that all aspects of patient care are managed and communicated appropriately across different healthcare settings."
+          },
+          "team": {
+            "title": "Integrated Healthcare Team",
+            "content": "A multidisciplinary team works together to provide comprehensive care, including physicians, nurses, specialists, pharmacists, and other healthcare professionals."
+          },
+          "technology": {
+            "title": "Technology Integration",
+            "content": "Electronic health records and health information technology systems are used to facilitate communication, coordination, and continuity of care among all providers."
+          },
+          "engagement": {
+            "title": "Patient Engagement",
+            "content": "Patients actively participate in their care decisions, with emphasis on education, self-care, and shared decision-making processes."
+          }
+        }
+      }
+    },
+    "cta": {
+      "title": "Experience Patient Medical Home Care",
+      "content": "Join our Patient Medical Home program and experience the benefits of comprehensive, coordinated, and patient-centered healthcare.",
+      "button": "Contact Us Today"
+    }
+  },
+  "contact": {
+    "title": "Contact Information",
+    "address": "1996 SW 1st St. Miami FL 33135",
+    "phone": "305-340-7883",
+    "email": "info@galarragaresearch.com",
+    "hours": {
+      "weekdays": "Monday to Friday: 8:00 AM - 6:00 PM",
+      "saturday": "Saturdays: 9:00 AM - 2:00 PM"
+    },
+    "map": {
+      "title": "Location",
+      "button": "View exact location on Google Maps"
+    }
+  },
+  "patient_rights": {
+    "title": "Patient Rights and Empowerment",
+    "subtitle": "Learn about your rights as a patient and how to exercise them",
+    "sections": {
+      "rights": {
+        "title": "Patient Rights",
+        "items": [
+          "Receive quality medical care",
+          "Be treated with respect and dignity",
+          "Access information about your health",
+          "Participate in treatment decisions",
+          "Maintain confidentiality of your medical information"
+        ]
+      },
+      "responsibilities": {
+        "title": "Patient Responsibilities",
+        "items": [
+          "Provide accurate medical information",
+          "Follow treatment instructions",
+          "Respect other patients and medical staff",
+          "Keep scheduled appointments",
+          "Report changes in your health condition"
+        ]
+      }
+    }
+  },
+  "lead_screening": {
+    "title": "Lead Screening",
+    "subtitle": "Important information about lead poisoning prevention",
+    "sections": {
+      "prevention": {
+        "title": "Lead Poisoning Prevention",
+        "content": "Lead is a toxic metal that can cause serious health problems, especially in young children."
+      },
+      "symptoms": {
+        "title": "Symptoms",
+        "content": "Symptoms may include learning, behavior, and growth problems."
+      },
+      "prevention_tips": {
+        "title": "Prevention Tips",
+        "items": [
+          "Keep the house clean and dust-free",
+          "Wash children's hands frequently",
+          "Prevent children from playing in dirt",
+          "Eat foods rich in calcium and iron"
+        ]
+      }
+    }
+  },
+  "vip_pcmh": {
+    "title": "VIP PCMH",
+    "subtitle": "Comprehensive Medical Care Program",
+    "sections": {
+      "overview": {
+        "title": "Program Description",
+        "content": "The VIP PCMH program offers comprehensive and coordinated medical care for our patients."
+      },
+      "benefits": {
+        "title": "Benefits",
+        "items": [
+          "Comprehensive medical care",
+          "Care coordination",
+          "Access to specialists",
+          "Continuous follow-up"
+        ]
+      },
+      "contact_info": {
+        "title": "Contact Information",
+        "phone": "305-340-7883",
+        "hours": {
+          "weekdays": "Monday to Friday: 8:00 AM - 6:00 PM",
+          "saturday": "Saturdays: 9:00 AM - 2:00 PM"
+        }
+      }
+    }
+  }
+}

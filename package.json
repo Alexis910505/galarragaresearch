@@ -1,0 +1,44 @@
+{
+  "name": "galarraga-research",
+  "version": "1.0.0",
+  "description": "Landing page de investigación médica - Accede a investigaciones médicas confiables",
+  "main": "index.html",
+  "type": "module",
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "npx http-server . -p 3000 -o",
+    "serve": "npx http-server . -p 8080",
+    "clean": "rimraf dist"
+  },
+  "keywords": [
+    "investigación médica",
+    "landing page",
+    "medicina",
+    "ciencia",
+    "búsqueda médica",
+    "artículos científicos"
+  ],
+  "author": "Galarraga Research Team <info@galarragaresearch.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/galarragaresearch/website.git"
+  },
+  "bugs": {
+    "url": "https://github.com/galarragaresearch/website/issues"
+  },
+  "homepage": "https://galarragaresearch.com",
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "rimraf": "^5.0.5"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  }
+}

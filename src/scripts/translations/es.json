@@ -1,0 +1,243 @@
+{
+  "common": {
+    "loading": "Cargando...",
+    "error": "Error",
+    "success": "Éxito",
+    "close": "Cerrar",
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "continue": "Continuar",
+    "back": "Volver",
+    "next": "Siguiente",
+    "previous": "Anterior",
+    "search": "Buscar",
+    "contact": "Contacto",
+    "home": "Inicio"
+  },
+  "header": {
+    "logo": "Galarraga Research",
+    "tagline": "Accede a investigaciones médicas confiables en un solo lugar",
+    "language": "Idioma",
+    "menu": "Menú",
+    "close_menu": "Cerrar menú",
+    "navigation": {
+      "home": "Inicio",
+      "search": "Buscar",
+      "contact": "Contacto",
+      "patient_rights": "Derechos del Paciente",
+      "lead_screening": "Detección de Plomo",
+      "vip_pcmh": "VIP PCMH",
+      "patient_medical_home": "Hogar Médico del Paciente"
+    }
+  },
+  "footer": {
+    "company": "Galarraga Research",
+    "description": "Accede a investigaciones médicas confiables en un solo lugar",
+    "quick_links": "Enlaces Rápidos",
+    "social_media": "Redes Sociales",
+    "copyright": "Copyright © 2024 Yolanda A. Galarraga Ramirez MD PA - Todos los derechos reservados",
+    "developed": "Desarrollado por Centralized Code LLC",
+    "links": {
+      "home": "Inicio",
+      "search": "Buscar",
+      "contact": "Contacto",
+      "patient_rights": "Derechos del Paciente",
+      "lead_screening": "Detección de Plomo",
+      "vip_pcmh": "VIP PCMH",
+      "patient_medical_home": "Hogar Médico del Paciente"
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "Bienvenido a Galarraga Research",
+      "subtitle": "Tu fuente confiable de investigaciones médicas y recursos de salud",
+      "cta": "Explorar Investigaciones"
+    },
+    "features": {
+      "title": "Nuestros Servicios",
+      "research": {
+        "title": "Investigación Médica",
+        "description": "Accede a las últimas investigaciones médicas y estudios clínicos"
+      },
+      "resources": {
+        "title": "Recursos de Salud",
+        "description": "Encuentra información confiable sobre salud y bienestar"
+      },
+      "support": {
+        "title": "Soporte Especializado",
+        "description": "Recibe apoyo de profesionales médicos especializados"
+      }
+    }
+  },
+  "patient_medical_home": {
+    "title": "¿Qué es un Hogar Médico del Paciente?",
+    "subtitle": "Descubre cómo el modelo de Hogar Médico del Paciente transforma la prestación de atención médica para brindar atención integral, coordinada y centrada en el paciente.",
+    "sections": {
+      "understanding": {
+        "title": "Entendiendo el Hogar Médico del Paciente",
+        "content1": "Un Hogar Médico del Paciente (HMP) es un modelo de prestación de atención médica que proporciona atención integral, coordinada y centrada en el paciente. Sirve como el centro central para todas las necesidades de atención médica de un paciente, asegurando continuidad, accesibilidad y calidad en la prestación de atención.",
+        "content2": "El modelo HMP enfatiza la importancia de construir relaciones sólidas entre los pacientes y sus proveedores de atención médica, fomentando la confianza, la comunicación y la colaboración en el proceso de atención."
+      },
+      "features": {
+        "title": "Características Clave del Hogar Médico del Paciente",
+        "items": {
+          "comprehensive": {
+            "title": "Atención Integral",
+            "content": "Aborda la mayoría de las necesidades de atención médica física y mental de cada paciente, incluyendo prevención y bienestar, atención aguda y atención crónica."
+          },
+          "patient_centered": {
+            "title": "Centrado en el Paciente",
+            "content": "Proporciona atención médica que es respetuosa y receptiva a las preferencias, necesidades y valores individuales del paciente."
+          },
+          "coordinated": {
+            "title": "Atención Coordinada",
+            "content": "Coordina la atención en todos los elementos del sistema de salud más amplio, incluyendo atención especializada, hospitales, atención domiciliaria y servicios comunitarios."
+          },
+          "accessible": {
+            "title": "Servicios Accesibles",
+            "content": "Ofrece servicios accesibles con tiempos de espera más cortos para necesidades urgentes, horarios presenciales mejorados, acceso telefónico o electrónico las 24 horas a un miembro del equipo de atención."
+          },
+          "quality": {
+            "title": "Calidad y Seguridad",
+            "content": "Comprometido con la mejora de la calidad y la medicina basada en evidencia, utilizando herramientas de apoyo para la toma de decisiones clínicas y participando en la medición y mejora del rendimiento."
+          },
+          "team_based": {
+            "title": "Atención Basada en Equipo",
+            "content": "Dirigido por médicos, asistentes médicos o enfermeras practicantes que trabajan junto con otros profesionales de la salud para proporcionar atención integral."
+          }
+        }
+      },
+      "benefits": {
+        "title": "Beneficios del Hogar Médico del Paciente",
+        "items": [
+          "Mejores resultados de salud para los pacientes",
+          "Mejor coordinación de la atención entre proveedores",
+          "Mayor satisfacción y experiencia del paciente",
+          "Reducción de costos de atención médica y readmisiones hospitalarias",
+          "Mayor enfoque en la prevención y el bienestar",
+          "Mejor manejo de condiciones crónicas",
+          "Comunicación mejorada entre pacientes y proveedores",
+          "Mayor acceso a la atención y servicios",
+          "Mayor énfasis en la educación del paciente y el autocuidado",
+          "Procesos de prestación de atención médica optimizados"
+        ]
+      },
+      "implementation": {
+        "title": "Cómo Funciona el HMP",
+        "subsections": {
+          "coordinator": {
+            "title": "Proveedor de Atención Primaria como Coordinador",
+            "content": "El proveedor de atención primaria sirve como coordinador central, asegurando que todos los aspectos de la atención del paciente sean manejados y comunicados adecuadamente a través de diferentes entornos de atención médica."
+          },
+          "team": {
+            "title": "Equipo de Atención Médica Integrado",
+            "content": "Un equipo multidisciplinario trabaja junto para proporcionar atención integral, incluyendo médicos, enfermeras, especialistas, farmacéuticos y otros profesionales de la salud."
+          },
+          "technology": {
+            "title": "Integración Tecnológica",
+            "content": "Los registros de salud electrónicos y los sistemas de tecnología de información de salud se utilizan para facilitar la comunicación, coordinación y continuidad de la atención entre todos los proveedores."
+          },
+          "engagement": {
+            "title": "Participación del Paciente",
+            "content": "Los pacientes participan activamente en las decisiones de su atención, con énfasis en la educación, el autocuidado y los procesos de toma de decisiones compartidas."
+          }
+        }
+      }
+    },
+    "cta": {
+      "title": "Experimenta la Atención del Hogar Médico del Paciente",
+      "content": "Únete a nuestro programa de Hogar Médico del Paciente y experimenta los beneficios de una atención médica integral, coordinada y centrada en el paciente.",
+      "button": "Contáctanos Hoy"
+    }
+  },
+  "contact": {
+    "title": "Información de Contacto",
+    "address": "1996 SW 1st St. Miami FL 33135",
+    "phone": "305-340-7883",
+    "email": "info@galarragaresearch.com",
+    "hours": {
+      "weekdays": "Lunes a Viernes: 8:00 AM - 6:00 PM",
+      "saturday": "Sábados: 9:00 AM - 2:00 PM"
+    },
+    "map": {
+      "title": "Ubicación",
+      "button": "Ver ubicación exacta en Google Maps"
+    }
+  },
+  "patient_rights": {
+    "title": "Derechos del Paciente y Empoderamiento",
+    "subtitle": "Conoce tus derechos como paciente y cómo ejercerlos",
+    "sections": {
+      "rights": {
+        "title": "Derechos del Paciente",
+        "items": [
+          "Recibir atención médica de calidad",
+          "Ser tratado con respeto y dignidad",
+          "Acceder a información sobre su salud",
+          "Participar en decisiones sobre su tratamiento",
+          "Mantener la confidencialidad de su información médica"
+        ]
+      },
+      "responsibilities": {
+        "title": "Responsabilidades del Paciente",
+        "items": [
+          "Proporcionar información médica precisa",
+          "Seguir las instrucciones del tratamiento",
+          "Respetar a otros pacientes y personal médico",
+          "Mantener citas programadas",
+          "Informar sobre cambios en su condición de salud"
+        ]
+      }
+    }
+  },
+  "lead_screening": {
+    "title": "Detección de Plomo",
+    "subtitle": "Información importante sobre la prevención del envenenamiento por plomo",
+    "sections": {
+      "prevention": {
+        "title": "Prevención del Envenenamiento por Plomo",
+        "content": "El plomo es un metal tóxico que puede causar serios problemas de salud, especialmente en niños pequeños."
+      },
+      "symptoms": {
+        "title": "Síntomas",
+        "content": "Los síntomas pueden incluir problemas de aprendizaje, comportamiento y crecimiento."
+      },
+      "prevention_tips": {
+        "title": "Consejos de Prevención",
+        "items": [
+          "Mantener la casa limpia y libre de polvo",
+          "Lavar las manos de los niños frecuentemente",
+          "Evitar que los niños jueguen con tierra",
+          "Comer alimentos ricos en calcio y hierro"
+        ]
+      }
+    }
+  },
+  "vip_pcmh": {
+    "title": "VIP PCMH",
+    "subtitle": "Programa de Atención Médica Integral",
+    "sections": {
+      "overview": {
+        "title": "Descripción del Programa",
+        "content": "El programa VIP PCMH ofrece atención médica integral y coordinada para nuestros pacientes."
+      },
+      "benefits": {
+        "title": "Beneficios",
+        "items": [
+          "Atención médica integral",
+          "Coordinación de cuidados",
+          "Acceso a especialistas",
+          "Seguimiento continuo"
+        ]
+      },
+      "contact_info": {
+        "title": "Información de Contacto",
+        "phone": "305-340-7883",
+        "hours": {
+          "weekdays": "Lunes a Viernes: 8:00 AM - 6:00 PM",
+          "saturday": "Sábados: 9:00 AM - 2:00 PM"
+        }
+      }
+    }
+  }
+}
