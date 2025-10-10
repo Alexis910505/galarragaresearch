@@ -49,24 +49,94 @@
   },
   "home": {
     "hero": {
-      "title": "Welcome to Galarraga Research",
-      "subtitle": "Your trusted source for medical research and health resources",
-      "cta": "Explore Research"
+      "badge": "Advanced Medical Research",
+      "title": "Access Reliable Medical Research in One Place",
+      "subtitle": "Search articles, clinical trials, and scientific reviews in seconds. Reliable medical database with global access.",
+      "cta_primary": "Search Now",
+      "cta_secondary": "Explore Database"
     },
-    "features": {
-      "title": "Our Services",
-      "research": {
-        "title": "Medical Research",
-        "description": "Access the latest medical research and clinical studies"
+    "benefits": {
+      "title": "Why Choose Galarraga Research?",
+      "subtitle": "Advanced tools for healthcare professionals and researchers",
+      "advanced_search": {
+        "title": "Advanced Search",
+        "description": "Filter by specialty, study type, date, and more. Find exactly what you need."
       },
-      "resources": {
-        "title": "Health Resources",
-        "description": "Find reliable information about health and wellness"
+      "reliable_info": {
+        "title": "Reliable Information",
+        "description": "All articles are peer-reviewed and come from recognized medical sources."
       },
-      "support": {
-        "title": "Specialized Support",
-        "description": "Receive support from specialized medical professionals"
+      "global_access": {
+        "title": "Global Access",
+        "description": "Available in multiple languages with content from medical institutions worldwide."
       }
+    },
+    "demo": {
+      "title": "Try Our Search Engine",
+      "subtitle": "Explore our database with over 50,000 medical articles",
+      "placeholder": "Search by keyword: diabetes, cancer, COVID-19...",
+      "button": "Search",
+      "results_title": "Search results",
+      "results_count": "results"
+    },
+    "testimonials": {
+      "title": "Trusted by Professionals",
+      "subtitle": "Doctors, researchers, and students trust our platform",
+      "testimonial1": {
+        "quote": "Galarraga Research has revolutionized the way I search for medical literature. The interface is intuitive and the results are always relevant.",
+        "author": "Dr. Ana Martinez",
+        "role": "Cardiologist, General Hospital"
+      },
+      "testimonial2": {
+        "quote": "As a medical student, this platform has helped me find the most current articles for my research.",
+        "author": "Carlos Rodriguez",
+        "role": "Medical Student, UNAM"
+      },
+      "testimonial3": {
+        "quote": "The quality of the articles and the ease of search make Galarraga Research my first choice.",
+        "author": "Dr. Laura Gonzalez",
+        "role": "Researcher, National Institute"
+      }
+    },
+    "cta": {
+      "title": "Start Your Medical Research Today",
+      "subtitle": "Join thousands of professionals who already trust our platform",
+      "button_search": "Start Search",
+      "button_alerts": "Receive Alerts",
+      "email_placeholder": "Your email address",
+      "email_submit": "Subscribe",
+      "email_note": "Receive alerts about new articles in your specialty"
+    },
+    "contact": {
+      "title": "Contact",
+      "subtitle": "Do you have questions about our pediatric services? We're here to care for your little one's health.",
+      "clinic": {
+        "title": "Pediatric Clinic",
+        "address": "1996 SW 1st St.\nMiami FL 33135"
+      },
+      "consultations": {
+        "title": "Pediatric Consultations",
+        "phone": "PH. 305.649.7663"
+      },
+      "fax": {
+        "title": "Medical Fax",
+        "number": "FAX. 305.541.2735"
+      },
+      "email": {
+        "title": "Pediatric Email",
+        "address": "info@galarragamd.com"
+      },
+      "portal": {
+        "title": "Pediatric Portal",
+        "url": "www.galarragamd.com"
+      },
+      "hours": {
+        "title": "Office Hours",
+        "weekdays": "Mon-Fri: 9:00am - 5:00pm",
+        "saturday": "Sat: 9:00am - 1:00pm (alternate)"
+      },
+      "map_button": "View large map",
+      "map_button_mobile": "View exact location on Google Maps"
     }
   },
   "patient_medical_home": {

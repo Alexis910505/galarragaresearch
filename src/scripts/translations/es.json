@@ -49,24 +49,94 @@
   },
   "home": {
     "hero": {
-      "title": "Bienvenido a Galarraga Research",
-      "subtitle": "Tu fuente confiable de investigaciones médicas y recursos de salud",
-      "cta": "Explorar Investigaciones"
+      "badge": "Investigación Médica Avanzada",
+      "title": "Accede a Investigaciones Médicas Confiables en un Solo Lugar",
+      "subtitle": "Busca artículos, ensayos clínicos y revisiones científicas en segundos. Base de datos médica confiable con acceso global.",
+      "cta_primary": "Buscar Ahora",
+      "cta_secondary": "Explorar Base de Datos"
     },
-    "features": {
-      "title": "Nuestros Servicios",
-      "research": {
-        "title": "Investigación Médica",
-        "description": "Accede a las últimas investigaciones médicas y estudios clínicos"
+    "benefits": {
+      "title": "¿Por qué elegir Galarraga Research?",
+      "subtitle": "Herramientas avanzadas para profesionales de la salud e investigadores",
+      "advanced_search": {
+        "title": "Búsqueda Avanzada",
+        "description": "Filtra por especialidad, tipo de estudio, fecha y más. Encuentra exactamente lo que necesitas."
       },
-      "resources": {
-        "title": "Recursos de Salud",
-        "description": "Encuentra información confiable sobre salud y bienestar"
+      "reliable_info": {
+        "title": "Información Confiable",
+        "description": "Todos los artículos son revisados por expertos y provienen de fuentes médicas reconocidas."
       },
-      "support": {
-        "title": "Soporte Especializado",
-        "description": "Recibe apoyo de profesionales médicos especializados"
+      "global_access": {
+        "title": "Acceso Global",
+        "description": "Disponible en múltiples idiomas con contenido de instituciones médicas de todo el mundo."
       }
+    },
+    "demo": {
+      "title": "Prueba Nuestro Buscador",
+      "subtitle": "Explora nuestra base de datos con más de 50,000 artículos médicos",
+      "placeholder": "Busca por palabra clave: diabetes, cáncer, COVID-19...",
+      "button": "Buscar",
+      "results_title": "Resultados de búsqueda",
+      "results_count": "resultados"
+    },
+    "testimonials": {
+      "title": "Confianza de Profesionales",
+      "subtitle": "Médicos, investigadores y estudiantes confían en nuestra plataforma",
+      "testimonial1": {
+        "quote": "Galarraga Research ha revolucionado mi forma de buscar literatura médica. La interfaz es intuitiva y los resultados son siempre relevantes.",
+        "author": "Dr. Ana Martínez",
+        "role": "Cardióloga, Hospital General"
+      },
+      "testimonial2": {
+        "quote": "Como estudiante de medicina, esta plataforma me ha ayudado a encontrar los artículos más actualizados para mis investigaciones.",
+        "author": "Carlos Rodríguez",
+        "role": "Estudiante de Medicina, UNAM"
+      },
+      "testimonial3": {
+        "quote": "La calidad de los artículos y la facilidad de búsqueda hacen que Galarraga Research sea mi primera opción.",
+        "author": "Dr. Laura González",
+        "role": "Investigadora, Instituto Nacional"
+      }
+    },
+    "cta": {
+      "title": "Empieza tu Investigación Médica Hoy",
+      "subtitle": "Únete a miles de profesionales que ya confían en nuestra plataforma",
+      "button_search": "Comenzar Búsqueda",
+      "button_alerts": "Recibir Alertas",
+      "email_placeholder": "Tu correo electrónico",
+      "email_submit": "Suscribirse",
+      "email_note": "Recibe alertas sobre nuevos artículos en tu especialidad"
+    },
+    "contact": {
+      "title": "Contacto",
+      "subtitle": "¿Tienes preguntas sobre nuestros servicios de pediatría infantil? Estamos aquí para cuidar la salud de tu pequeño.",
+      "clinic": {
+        "title": "Clínica Pediátrica",
+        "address": "1996 SW 1st St.\nMiami FL 33135"
+      },
+      "consultations": {
+        "title": "Consultas Pediátricas",
+        "phone": "PH. 305.649.7663"
+      },
+      "fax": {
+        "title": "Fax Médico",
+        "number": "FAX. 305.541.2735"
+      },
+      "email": {
+        "title": "Email Pediátrico",
+        "address": "info@galarragamd.com"
+      },
+      "portal": {
+        "title": "Portal Pediátrico",
+        "url": "www.galarragamd.com"
+      },
+      "hours": {
+        "title": "Horarios de Atención",
+        "weekdays": "Lun-Vie: 9:00am - 5:00pm",
+        "saturday": "Sáb: 9:00am - 1:00pm (alternos)"
+      },
+      "map_button": "Ver mapa grande",
+      "map_button_mobile": "Ver ubicación exacta en Google Maps"
     }
   },
   "patient_medical_home": {
