@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Simple Translation</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .test { background: #f0f0f0; padding: 10px; margin: 10px 0; border-radius: 4px; }
+        button { padding: 10px 20px; margin: 10px; background: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h1>Test Simple de Traducciones</h1>
+    
+    <div class="test">
+        <h2>Traducciones CTA:</h2>
+        <p><strong>Título:</strong> <span id="cta-title" data-translate="patient-medical-home.cta.title">Título por defecto</span></p>
+        <p><strong>Contenido:</strong> <span id="cta-content" data-translate="patient-medical-home.cta.content">Contenido por defecto</span></p>
+        <p><strong>Botón:</strong> <span id="cta-button" data-translate="patient-medical-home.cta.button">Botón por defecto</span></p>
+    </div>
+    
+    <div class="test">
+        <h2>Traducciones Básicas:</h2>
+        <p><strong>Título Principal:</strong> <span id="main-title" data-translate="patient-medical-home.title">Título principal por defecto</span></p>
+        <p><strong>Subtítulo:</strong> <span id="subtitle" data-translate="patient-medical-home.subtitle">Subtítulo por defecto</span></p>
+    </div>
+    
+    <button onclick="testTranslations()">Probar Traducciones</button>
+    <button onclick="changeLanguage()">Cambiar Idioma</button>
+    <button onclick="checkSystem()">Verificar Sistema</button>
+    
+    <div id="results" class="test"></div>
+
+    <script type="module">
+        import { LANGUAGES, DEFAULT_LANGUAGE, LANGUAGE_STORAGE_KEY } from './src/scripts/config/languages.js';
+        import { translations } from './src/scripts/translations/index.js';
+        import TranslationManager from './src/scripts/components/TranslationManager.js';
+        
+        // Inicializar el gestor de traducciones
+        window.translationManager = new TranslationManager();
+        
+        // Funciones de prueba
+        window.testTranslations = function() {
+            const results = document.getElementById('results');
+            try {
+                const title = window.translationManager.t('patient-medical-home.cta.title');
+                const content = window.translationManager.t('patient-medical-home.cta.content');
+                const button = window.translationManager.t('patient-medical-home.cta.button');
+                
+                results.innerHTML = `
+                    <h3>Resultados de Traducción:</h3>
+                    <p><strong>CTA Title:</strong> ${title}</p>
+                    <p><strong>CTA Content:</strong> ${content}</p>
+                    <p><strong>CTA Button:</strong> ${button}</p>
+                    <p><strong>Idioma actual:</strong> ${window.translationManager.getCurrentLanguage()}</p>
+                `;
+            } catch (error) {
+                results.innerHTML = `<p style="color: red;">Error: ${error.message}</p>`;
+            }
+        };
+        
+        window.changeLanguage = function() {
+            const newLang = window.translationManager.toggleLanguage();
+            const results = document.getElementById('results');
+            results.innerHTML = `<p><strong>Idioma cambiado a:</strong> ${newLang}</p>`;
+        };
+        
+        window.checkSystem = function() {
+            const results = document.getElementById('results');
+            try {
+                const hasTranslation = window.translationManager.hasTranslation('patient-medical-home.cta.title');
+                const availableKeys = window.translationManager.getAvailableKeys();
+                const currentLang = window.translationManager.getCurrentLanguage();
+                
+                results.innerHTML = `
+                    <h3>Estado del Sistema:</h3>
+                    <p><strong>TranslationManager inicializado:</strong> ${window.translationManager ? 'Sí' : 'No'}</p>
+                    <p><strong>Idioma actual:</strong> ${currentLang}</p>
+                    <p><strong>Clave CTA existe:</strong> ${hasTranslation ? 'Sí' : 'No'}</p>
+                    <p><strong>Claves disponibles:</strong> ${availableKeys.length}</p>
+                    <p><strong>Primeras 10 claves:</strong> ${availableKeys.slice(0, 10).join(', ')}</p>
+                `;
+            } catch (error) {
+                results.innerHTML = `<p style="color: red;">Error: ${error.message}</p>`;
+            }
+        };
+        
+        console.log('✅ Sistema cargado');
+    </script>
+</body>
+</html>

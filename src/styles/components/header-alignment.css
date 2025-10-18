@@ -1,0 +1,113 @@
+/**
+ * Header Alignment Component
+ * Componente reutilizable para alineación del header
+ * Se aplica a las clases existentes del header
+ */
+
+/* ============================================================================
+   HEADER ALIGNMENT COMPONENT
+   ============================================================================ */
+
+/* Clase del componente que se aplica al contenedor de navegación */
+.header-alignment .header__nav-list {
+  height: 60px !important;
+  display: flex !important;
+  align-items: center !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.header-alignment .header__nav-list li {
+  height: 60px !important;
+  display: flex !important;
+  align-items: center !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  vertical-align: middle !important;
+}
+
+.header-alignment .header__nav-link {
+  height: 60px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin: 0 !important;
+  padding: 0 16px !important;
+  vertical-align: middle !important;
+  line-height: 1 !important;
+  white-space: nowrap !important;
+}
+
+/* Específico para el último elemento */
+.header-alignment .header__nav-list li:last-child {
+  height: 60px !important;
+  display: flex !important;
+  align-items: center !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  vertical-align: middle !important;
+}
+
+.header-alignment .header__nav-list li:last-child .header__nav-link {
+  height: 60px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin: 0 !important;
+  padding: 0 16px !important;
+  vertical-align: middle !important;
+  line-height: 1 !important;
+  white-space: nowrap !important;
+}
+
+/* ============================================================================
+   RESPONSIVE DESIGN
+   ============================================================================ */
+
+@media (min-width: 1025px) {
+  .header-alignment .header__nav-list {
+    height: 60px !important;
+  }
+  
+  .header-alignment .header__nav-list li {
+    height: 60px !important;
+  }
+  
+  .header-alignment .header__nav-link {
+    height: 60px !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  .header-alignment .header__nav-list {
+    height: 60px !important;
+    gap: var(--space-5) !important;
+  }
+  
+  .header-alignment .header__nav-link {
+    height: 60px !important;
+    padding: 0 16px !important;
+    font-size: var(--font-size-base) !important;
+  }
+}
+
+@media (min-width: 769px) {
+  .header-alignment .header__nav-list {
+    height: 60px !important;
+    display: flex !important;
+    align-items: center !important;
+  }
+  
+  .header-alignment .header__nav-list li {
+    height: 60px !important;
+    display: flex !important;
+    align-items: center !important;
+  }
+  
+  .header-alignment .header__nav-link {
+    height: 60px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+}

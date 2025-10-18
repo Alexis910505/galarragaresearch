@@ -1,0 +1,9 @@
+# Redirects para Netlify
+# https://docs.netlify.com/routing/redirects/
+
+# Redirect de /home a /
+/home / 301
+
+# SPA fallback para rutas no encontradas
+/* /index.html 404
+

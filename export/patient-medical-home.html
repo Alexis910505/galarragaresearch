@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-translate-title="patient-medical-home.title">¿Qué es un Hogar Médico del Paciente? - Galarraga Research</title>
+    <meta name="description" content="Aprende sobre el Hogar Médico del Paciente (HMP) y cómo mejora la prestación de atención médica y los resultados del paciente.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🏥%3C/text%3E%3C/svg%3E">
+    
+    <!-- CSS Principal -->
+    <link rel="stylesheet" href="src/styles/main.css">
+    
+    <style>
+        /* ============================================================================
+           ESTILOS ESPECÍFICOS PARA PATIENT MEDICAL HOME
+           ============================================================================ */
+        
+        body {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            min-height: 50vh;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, #1a252f 0%, #2c3e50 100%);
+            padding: 0px 0 40px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            height: 120px;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="hearts" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M10 3C10 3, 6 1, 6 5C6 8, 10 12, 10 12C10 12, 14 8, 14 5C14 1, 10 3, 10 3Z" fill="rgba(255,255,255,0.05)"/></pattern></defs><rect width="100" height="100" fill="url(%23hearts)"/></svg>');
+            opacity: 0.3;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 600;
+            color: #ffffff;
+            margin-bottom: 20px;
+            text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            position: relative;
+            z-index: 1;
+        }
+        
+        .hero p {
+            font-size: 1.5rem;
+            color: #ecf0f1;
+            margin-bottom: 40px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .main-content {
+            padding: 40px 0;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .content-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 20px;
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            margin-bottom: 30px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+        
+        .section {
+            margin-bottom: 3rem;
+        }
+        
+        .content-card h2 {
+            color: #ffffff;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .content-card h3 {
+            color: #3498db;
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            margin-top: 30px;
+        }
+        
+        .content-card p {
+            color: #bdc3c7;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .feature-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+            border-color: rgba(52, 152, 219, 0.3);
+        }
+        
+        .feature-card h4 {
+            color: #3498db;
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        
+        .feature-card p {
+            color: #bdc3c7;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+        
+        .benefits-list {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 15px;
+            margin: 20px 0;
+        }
+        
+        .benefits-list ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .benefits-list li {
+            padding: 15px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 1.1rem;
+            color: #bdc3c7;
+        }
+        
+        .benefits-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .benefits-list li::before {
+            content: "✓";
+            color: #3498db;
+            font-weight: bold;
+            margin-right: 15px;
+            font-size: 1.2rem;
+        }
+        
+        .cta-section {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            color: white;
+            padding: 3rem;
+            border-radius: 20px;
+            text-align: center;
+            margin: 3rem 0;
+        }
+        
+        .cta-section h2 {
+            color: white;
+            margin-bottom: 1rem;
+        }
+        
+        .cta-section p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero p {
+                font-size: 1.1rem;
+            }
+            
+            .main-content {
+                margin: -20px 10px 0;
+                padding: 40px 20px;
+            }
+            
+            .section h2 {
+                font-size: 2rem;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- ============================================================================
+         HEADER
+         ============================================================================ -->
+    <div id="main-header"></div>
+
+    <!-- ============================================================================
+         HERO SECTION
+         ============================================================================ -->
+        <section class="hero">
+            <div class="container">
+                <h1 data-translate="patient_medical_home.title">¿Qué es un Hogar Médico del Paciente?</h1>
+                <p data-translate="patient_medical_home.subtitle">Descubre cómo el modelo de Hogar Médico del Paciente transforma la prestación de atención médica para brindar atención integral, coordinada y centrada en el paciente.</p>
+            </div>
+        </section>
+
+    <!-- ============================================================================
+         MAIN CONTENT
+         ============================================================================ -->
+    <main class="main-content">
+        <div class="container">
+        <!-- Introduction Section -->
+        <div class="content-card">
+                <h2 data-translate="patient_medical_home.sections.understanding.title">Entendiendo el Hogar Médico del Paciente</h2>
+                <p data-translate="patient_medical_home.sections.understanding.content1">Un Hogar Médico del Paciente (HMP) es un modelo de prestación de atención médica que proporciona atención integral, coordinada y centrada en el paciente. Sirve como el centro central para todas las necesidades de atención médica de un paciente, asegurando continuidad, accesibilidad y calidad en la prestación de atención.</p>
+                
+                <p data-translate="patient_medical_home.sections.understanding.content2">El modelo HMP enfatiza la importancia de construir relaciones sólidas entre los pacientes y sus proveedores de atención médica, fomentando la confianza, la comunicación y la colaboración en el proceso de atención.</p>
+        </div>
+
+            <!-- Key Features Section -->
+            <div class="content-card">
+                <h2 data-translate="patient_medical_home.sections.features.title">Características Clave del Hogar Médico del Paciente</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <h4 data-translate="patient_medical_home.sections.features.items.comprehensive.title">Atención Integral</h4>
+                        <p data-translate="patient_medical_home.sections.features.items.comprehensive.content">Aborda la mayoría de las necesidades de atención médica física y mental de cada paciente, incluyendo prevención y bienestar, atención aguda y atención crónica.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h4 data-translate="patient_medical_home.sections.features.items.patient_centered.title">Centrado en el Paciente</h4>
+                        <p data-translate="patient_medical_home.sections.features.items.patient_centered.content">Proporciona atención médica que es respetuosa y receptiva a las preferencias, necesidades y valores individuales del paciente.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h4 data-translate="patient_medical_home.sections.features.items.coordinated.title">Atención Coordinada</h4>
+                        <p data-translate="patient_medical_home.sections.features.items.coordinated.content">Coordina la atención en todos los elementos del sistema de salud más amplio, incluyendo atención especializada, hospitales, atención domiciliaria y servicios comunitarios.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h4 data-translate="patient_medical_home.sections.features.items.accessible.title">Servicios Accesibles</h4>
+                        <p data-translate="patient_medical_home.sections.features.items.accessible.content">Ofrece servicios accesibles con tiempos de espera más cortos para necesidades urgentes, horarios presenciales mejorados, acceso telefónico o electrónico las 24 horas a un miembro del equipo de atención.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h4 data-translate="patient_medical_home.sections.features.items.quality.title">Calidad y Seguridad</h4>
+                        <p data-translate="patient_medical_home.sections.features.items.quality.content">Comprometido con la mejora de la calidad y la medicina basada en evidencia, utilizando herramientas de apoyo para la toma de decisiones clínicas y participando en la medición y mejora del rendimiento.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h4 data-translate="patient_medical_home.sections.features.items.team_based.title">Atención Basada en Equipo</h4>
+                        <p data-translate="patient_medical_home.sections.features.items.team_based.content">Dirigido por médicos, asistentes médicos o enfermeras practicantes que trabajan junto con otros profesionales de la salud para proporcionar atención integral.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Benefits Section -->
+            <div class="content-card">
+                <h2 data-translate="patient_medical_home.sections.benefits.title">Beneficios del Hogar Médico del Paciente</h2>
+                <div class="benefits-list">
+                    <ul>
+                        <li data-translate="patient_medical_home.sections.benefits.items.0">Mejores resultados de salud para los pacientes</li>
+                        <li data-translate="patient_medical_home.sections.benefits.items.1">Mejor coordinación de la atención entre proveedores</li>
+                        <li data-translate="patient_medical_home.sections.benefits.items.2">Mayor satisfacción y experiencia del paciente</li>
+                        <li data-translate="patient_medical_home.sections.benefits.items.3">Reducción de costos de atención médica y readmisiones hospitalarias</li>
+                        <li data-translate="patient_medical_home.sections.benefits.items.4">Mayor enfoque en la prevención y el bienestar</li>
+                        <li data-translate="patient_medical_home.sections.benefits.items.5">Mejor manejo de condiciones crónicas</li>
+                        <li data-translate="patient_medical_home.sections.benefits.items.6">Comunicación mejorada entre pacientes y proveedores</li>
+                        <li data-translate="patient_medical_home.sections.benefits.items.7">Mayor acceso a la atención y servicios</li>
+                        <li data-translate="patient_medical_home.sections.benefits.items.8">Mayor énfasis en la educación del paciente y el autocuidado</li>
+                        <li data-translate="patient_medical_home.sections.benefits.items.9">Procesos de prestación de atención médica optimizados</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Implementation Section -->
+            <div class="content-card">
+                <h2 data-translate="patient_medical_home.sections.implementation.title">Cómo Funciona el HMP</h2>
+                <h3 data-translate="patient_medical_home.sections.implementation.subsections.coordinator.title">Proveedor de Atención Primaria como Coordinador</h3>
+                <p data-translate="patient_medical_home.sections.implementation.subsections.coordinator.content">El proveedor de atención primaria sirve como coordinador central, asegurando que todos los aspectos de la atención del paciente sean manejados y comunicados adecuadamente a través de diferentes entornos de atención médica.</p>
+                
+                <h3 data-translate="patient_medical_home.sections.implementation.subsections.team.title">Equipo de Atención Médica Integrado</h3>
+                <p data-translate="patient_medical_home.sections.implementation.subsections.team.content">Un equipo multidisciplinario trabaja junto para proporcionar atención integral, incluyendo médicos, enfermeras, especialistas, farmacéuticos y otros profesionales de la salud.</p>
+                
+                <h3 data-translate="patient_medical_home.sections.implementation.subsections.technology.title">Integración Tecnológica</h3>
+                <p data-translate="patient_medical_home.sections.implementation.subsections.technology.content">Los registros de salud electrónicos y los sistemas de tecnología de información de salud se utilizan para facilitar la comunicación, coordinación y continuidad de la atención entre todos los proveedores.</p>
+                
+                <h3 data-translate="patient_medical_home.sections.implementation.subsections.engagement.title">Participación del Paciente</h3>
+                <p data-translate="patient_medical_home.sections.implementation.subsections.engagement.content">Los pacientes participan activamente en las decisiones de su atención, con énfasis en la educación, el autocuidado y los procesos de toma de decisiones compartidas.</p>
+            </div>
+
+            <!-- Call to Action -->
+            <div class="content-card">
+                <h2 data-translate="patient_medical_home.cta.title">Experimenta la Atención del Hogar Médico del Paciente</h2>
+                <p data-translate="patient_medical_home.cta.content">Únete a nuestro programa de Hogar Médico del Paciente y experimenta los beneficios de una atención médica integral, coordinada y centrada en el paciente.</p>
+                <a href="index.html#contacto" class="btn" data-translate="patient_medical_home.cta.button">Contáctanos Hoy</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- ============================================================================
+         FOOTER
+         ============================================================================ -->
+    <div id="main-footer"></div>
+
+    <!-- ============================================================================
+         JAVASCRIPT PRINCIPAL
+         ============================================================================ -->
+
+    <!-- Librería de internacionalización -->
+    <script src="src/scripts/lib/i18n.js?v=1.0.0"></script>
+    
+    <script src="src/scripts/components/MainHeader.js?v=2.3.0"></script>
+    <script src="src/scripts/components/MainFooter.js?v=2.0.0"></script>
+    <script src="src/scripts/main.js"></script>
+
+    <!-- Los componentes se inicializan automáticamente -->
+</body>
+</html>

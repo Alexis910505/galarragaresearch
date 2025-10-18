@@ -1,0 +1,271 @@
+/**
+ * Contrast Utilities - Utilidades para mejorar el contraste
+ * 
+ * Este archivo contiene clases de utilidad para asegurar
+ * que todos los elementos tengan suficiente contraste
+ * para la accesibilidad y legibilidad.
+ */
+
+/* ============================================================================
+   CONTRASTE DE TEXTO
+   ============================================================================ */
+
+/* Texto con alto contraste para elementos importantes */
+.text-contrast-high {
+  color: var(--color-text-primary) !important;
+  font-weight: var(--font-weight-semibold);
+}
+
+/* Texto con contraste medio para contenido secundario */
+.text-contrast-medium {
+  color: var(--color-text-secondary) !important;
+  font-weight: var(--font-weight-medium);
+}
+
+/* Texto con contraste bajo para elementos terciarios */
+.text-contrast-low {
+  color: var(--color-text-tertiary) !important;
+  font-weight: var(--font-weight-normal);
+}
+
+/* ============================================================================
+   CONTRASTE DE FONDOS
+   ============================================================================ */
+
+/* Fondo con alto contraste */
+.bg-contrast-high {
+  background-color: var(--color-bg-primary) !important;
+  color: var(--color-text-primary) !important;
+}
+
+/* Fondo con contraste medio */
+.bg-contrast-medium {
+  background-color: var(--color-bg-secondary) !important;
+  color: var(--color-text-primary) !important;
+}
+
+/* Fondo con contraste bajo */
+.bg-contrast-low {
+  background-color: var(--color-bg-tertiary) !important;
+  color: var(--color-text-secondary) !important;
+}
+
+/* ============================================================================
+   CONTRASTE DE BORDES
+   ============================================================================ */
+
+/* Borde con alto contraste */
+.border-contrast-high {
+  border-color: var(--color-border-primary) !important;
+  border-width: 2px !important;
+}
+
+/* Borde con contraste medio */
+.border-contrast-medium {
+  border-color: var(--color-border-secondary) !important;
+  border-width: 1px !important;
+}
+
+/* Borde con contraste bajo */
+.border-contrast-low {
+  border-color: var(--color-border-subtle) !important;
+  border-width: 1px !important;
+}
+
+/* ============================================================================
+   CONTRASTE DE BOTONES
+   ============================================================================ */
+
+/* Botón con alto contraste */
+.btn-contrast-high {
+  background-color: var(--color-primary-600) !important;
+  color: white !important;
+  border: 2px solid var(--color-primary-600) !important;
+  font-weight: var(--font-weight-semibold) !important;
+}
+
+.btn-contrast-high:hover {
+  background-color: var(--color-primary-700) !important;
+  border-color: var(--color-primary-700) !important;
+}
+
+/* Botón con contraste medio */
+.btn-contrast-medium {
+  background-color: transparent !important;
+  color: var(--color-text-primary) !important;
+  border: 2px solid var(--color-border-primary) !important;
+  font-weight: var(--font-weight-medium) !important;
+}
+
+.btn-contrast-medium:hover {
+  background-color: var(--color-bg-secondary) !important;
+  border-color: var(--color-primary-300) !important;
+  color: var(--color-primary-700) !important;
+}
+
+/* ============================================================================
+   CONTRASTE DE INPUTS
+   ============================================================================ */
+
+/* Input con alto contraste */
+.input-contrast-high {
+  background-color: white !important;
+  color: var(--color-text-primary) !important;
+  border: 2px solid var(--color-border-primary) !important;
+  font-weight: var(--font-weight-medium) !important;
+}
+
+.input-contrast-high::placeholder {
+  color: var(--color-text-muted) !important;
+  opacity: 0.8 !important;
+}
+
+.input-contrast-high:focus {
+  border-color: var(--color-primary-500) !important;
+  box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.1) !important;
+}
+
+/* ============================================================================
+   CONTRASTE DE TARJETAS
+   ============================================================================ */
+
+/* Tarjeta con alto contraste */
+.card-contrast-high {
+  background-color: white !important;
+  color: var(--color-text-primary) !important;
+  border: 1px solid var(--color-border-primary) !important;
+  box-shadow: var(--shadow-sm) !important;
+}
+
+.card-contrast-high .card__title {
+  color: var(--color-text-primary) !important;
+  font-weight: var(--font-weight-semibold) !important;
+}
+
+.card-contrast-high .card__description {
+  color: var(--color-text-secondary) !important;
+  font-weight: var(--font-weight-normal) !important;
+}
+
+/* ============================================================================
+   CONTRASTE DE ENLACES
+   ============================================================================ */
+
+/* Enlace con alto contraste */
+.link-contrast-high {
+  color: var(--color-primary-600) !important;
+  font-weight: var(--font-weight-semibold) !important;
+  text-decoration: underline !important;
+  text-decoration-thickness: 2px !important;
+  text-underline-offset: 2px !important;
+}
+
+.link-contrast-high:hover {
+  color: var(--color-primary-700) !important;
+  text-decoration-thickness: 3px !important;
+}
+
+/* ============================================================================
+   CONTRASTE DE ICONOS
+   ============================================================================ */
+
+/* Icono con alto contraste */
+.icon-contrast-high {
+  color: var(--color-primary-600) !important;
+  opacity: 1 !important;
+}
+
+/* Icono con contraste medio */
+.icon-contrast-medium {
+  color: var(--color-text-secondary) !important;
+  opacity: 0.8 !important;
+}
+
+/* Icono con contraste bajo */
+.icon-contrast-low {
+  color: var(--color-text-tertiary) !important;
+  opacity: 0.6 !important;
+}
+
+/* ============================================================================
+   CONTRASTE RESPONSIVE
+   ============================================================================ */
+
+/* Ajustes de contraste para móviles */
+@media (max-width: 768px) {
+  .text-contrast-high {
+    font-size: var(--font-size-lg) !important;
+  }
+  
+  .btn-contrast-high {
+    padding: var(--space-3) var(--space-6) !important;
+    font-size: var(--font-size-base) !important;
+  }
+  
+  .input-contrast-high {
+    padding: var(--space-3) var(--space-4) !important;
+    font-size: var(--font-size-base) !important;
+  }
+}
+
+/* ============================================================================
+   CONTRASTE DE ACCESIBILIDAD
+   ============================================================================ */
+
+/* Mejoras de contraste para usuarios con problemas de visión */
+@media (prefers-contrast: high) {
+  .text-contrast-high {
+    color: #000000 !important;
+    font-weight: var(--font-weight-bold) !important;
+  }
+  
+  .text-contrast-medium {
+    color: #333333 !important;
+    font-weight: var(--font-weight-semibold) !important;
+  }
+  
+  .btn-contrast-high {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+    border-color: #000000 !important;
+  }
+  
+  .input-contrast-high {
+    border-color: #000000 !important;
+    border-width: 3px !important;
+  }
+}
+
+/* ============================================================================
+   CONTRASTE DE MODO OSCURO
+   ============================================================================ */
+
+@media (prefers-color-scheme: dark) {
+  .text-contrast-high {
+    color: #ffffff !important;
+  }
+  
+  .text-contrast-medium {
+    color: #e2e8f0 !important;
+  }
+  
+  .text-contrast-low {
+    color: #cbd5e1 !important;
+  }
+  
+  .bg-contrast-high {
+    background-color: #0f172a !important;
+    color: #ffffff !important;
+  }
+  
+  .bg-contrast-medium {
+    background-color: #1e293b !important;
+    color: #ffffff !important;
+  }
+  
+  .card-contrast-high {
+    background-color: #1e293b !important;
+    color: #ffffff !important;
+    border-color: #334155 !important;
+  }
+}

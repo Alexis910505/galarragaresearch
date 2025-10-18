@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detección de Plomo - Galarraga Research</title>
+    <meta name="description" content="Información sobre prevención de envenenamiento por plomo y pruebas de detección">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiBmaWxsPSIjRkZGOERDIiByeD0iMTUiLz48cGF0aCBkPSJNNTAgMzBDNTAgMzAsIDM1IDIwLCAzNSAzNUMzNSA0NSwgNTAgNjAsIDUwIDYwQzUwIDYwLCA2NSA0NSwgNjUgMzVDNjUgMjAsIDUwIDMwLCA1MCAzMFoiIGZpbGw9IndoaXRlIi8+PHBhdGggZD0iTTcwIDI1QzcwIDI1LCA3NSAyMCwgODAgMjVDODAgMjUsIDg1IDMwLCA4MCAzNUM4MCAzNSwgNzUgNDAsIDcwIDM1QzcwIDM1LCA2NSAzMCwgNzAgMjVaIiBmaWxsPSIjRDJCODQ5IiBvcGFjaXR5PSIwLjgiLz48cGF0aCBkPSJNNzAgNzVDNzAgNzUsIDc1IDcwLCA4MCA3NUM4MCA3NSwgODUgODAsIDgwIDg1QzgwIDg1LCA3NSA5MCwgNzAgODVDNzAgODUsIDY1IDgwLCA3MCA3NVoiIGZpbGw9IiNEMkI4NDkiIG9wYWNpdHk9IjAuOCIvPjxwYXRoIGQ9Ik0zMCA3NUMzMCA3NSwgMjUgNzAsIDIwIDc1QzIwIDc1LCAxNSA4MCwgMjAgODVDMjAgODUsIDI1IDkwLCAzMCA4NUMzMCA4NSwgMzUgODAsIDMwIDc1WiIgZmlsbD0iI0QyQjg0OSIgb3BhY2l0eT0iMC44Ii8+PHBhdGggZD0iTTMwIDI1QzMwIDI1LCAyNSAyMCwgMjAgMjVDMjAgMjUsIDE1IDMwLCAyMCAzNUMyMCAzNSwgMjUgNDAsIDMwIDM1QzMwIDM1LCAzNSAzMCwgMzAgMjVaIiBmaWxsPSIjRDJCODQ5IiBvcGFjaXR5PSIwLjgiLz48L3N2Zz4=">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="src/styles/main.css">
+    
+    <!-- CSS de corrección para alineación del header -->
+    
+    
+    <style>
+        /* ============================================================================
+           ESTILOS ESPECÍFICOS PARA DETECCIÓN DE PLOMO
+           ============================================================================ */
+        
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        
+        /* ============================================================================
+           HERO SECTION
+           ============================================================================ */
+        
+        .rights-hero {
+            background: linear-gradient(135deg, #1a252f 0%, #2c3e50 100%);
+            padding: 120px 0 80px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .rights-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="hearts" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M10 3C10 3, 6 1, 6 5C6 8, 10 12, 10 12C10 12, 14 8, 14 5C14 1, 10 3, 10 3Z" fill="rgba(255,255,255,0.05)"/></pattern></defs><rect width="100" height="100" fill="url(%23hearts)"/></svg>');
+            opacity: 0.3;
+        }
+        
+        .rights-hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .rights-hero h1 {
+            color: #ffffff;
+            font-size: 48px;
+            font-weight: 800;
+            margin-bottom: 20px;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .rights-hero p {
+            font-size: 20px;
+            font-weight: 400;
+            margin-bottom: 15px;
+            opacity: 0.95;
+        }
+        
+        .rights-hero .subtitle {
+            font-size: 18px;
+            font-weight: 300;
+            opacity: 0.9;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        /* ============================================================================
+           CONTENIDO PRINCIPAL
+           ============================================================================ */
+        
+        .rights-content {
+            padding: 80px 0;
+        }
+        
+        .rights-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 60px;
+            margin-bottom: 60px;
+        }
+        
+        .rights-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 20px;
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+        
+        .rights-card h3 {
+            color: #ffffff;
+            font-size: 28px;
+            font-weight: 700;
+            margin: 30px 0;
+            text-align: center;
+        }
+        
+        .rights-card h4 {
+            color: #ffffff;
+            font-size: 22px;
+            font-weight: 600;
+            margin: 20px 0;
+        }
+        
+        .rights-list {
+            color: #ecf0f1;
+            font-size: 16px;
+            line-height: 1.8;
+            padding-left: 20px;
+            margin: 0;
+        }
+        
+        .rights-list li {
+            margin-bottom: 4;
+            line-height: 1.2;
+            list-style-type: disc;
+        }
+        
+        .contact-info-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 50px;
+            border-radius: 20px;
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            margin-bottom: 50px;
+        }
+        
+        .contact-info-card h3 {
+            color: #ffffff;
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+        
+        .contact-item {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 25px;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .contact-row {
+            margin-bottom: 0;
+            text-align: left;
+        }
+        
+        .contact-item h4 {
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 0;
+            text-align: left;
+        }
+        
+        .contact-person {
+            color: #ecf0f1;
+            font-size: 14px;
+            font-weight: 400;
+            margin-bottom: 0;
+            text-align: left;
+        }
+        
+        .phone {
+            color: #3498db;
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 0;
+            text-align: left;
+        }
+        
+        .welcome-message {
+            text-align: center;
+            padding: 60px 0;
+        }
+        
+        .welcome-message p {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+        
+        .welcome-message .highlight {
+            font-size: 28px;
+            font-weight: 800;
+            color: #3498db;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        /* ============================================================================
+           FOOTER
+           ============================================================================ */
+        
+        
+        /* ============================================================================
+           RESPONSIVE DESIGN
+           ============================================================================ */
+        
+        @media (max-width: 768px) {
+            .header__nav {
+                display: none;
+            }
+            
+            .header__mobile-toggle {
+                display: flex;
+            }
+            
+            .rights-hero h1 {
+                font-size: 36px;
+            }
+            
+            .rights-hero p {
+                font-size: 18px;
+            }
+            
+            .rights-hero .subtitle {
+                font-size: 16px;
+            }
+            
+            .rights-card {
+                padding: 30px;
+            }
+            
+            .contact-info-card {
+                padding: 40px 30px;
+            }
+            
+            .contact-info-card h3 {
+                font-size: 20px;
+                margin-bottom: 25px;
+            }
+            
+            .contact-item {
+                padding: 20px;
+            }
+            
+            .contact-row {
+                margin-bottom: 0;
+            }
+            
+            .contact-item h4 {
+                font-size: 16px;
+                margin-bottom: 0;
+                text-align: left;
+            }
+            
+            .contact-person {
+                font-size: 13px;
+                margin-bottom: 0;
+                text-align: left;
+            }
+            
+            .phone {
+                font-size: 16px;
+                margin-bottom: 0;
+                text-align: left;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .rights-hero {
+                padding: 100px 0 60px 0;
+            }
+            
+            .rights-hero h1 {
+                font-size: 28px;
+            }
+            
+            .rights-hero p {
+                font-size: 16px;
+            }
+            
+            .rights-content {
+                padding: 60px 0;
+            }
+            
+            .rights-card {
+                padding: 25px;
+            }
+            
+            .rights-card h3 {
+                font-size: 24px;
+            }
+            
+            .rights-card h4 {
+                font-size: 20px;
+            }
+            
+            .contact-info-card {
+                padding: 30px 20px;
+            }
+            
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- ============================================================================
+         HEADER PRINCIPAL CON NAVEGACIÓN
+         ============================================================================ -->
+    
+    <!-- ============================================================================
+         HEADER - Componente reutilizable
+         ============================================================================ -->
+    
+    <div id="main-header"></div>
+
+    <!-- ============================================================================
+         CONTENIDO PRINCIPAL
+         ============================================================================ -->
+    
+    <main id="main-content" class="rights-page">
+        <!-- Hero Section -->
+        <section class="rights-hero">
+            <div class="container">
+                <div class="rights-hero-content">
+                    <h1>Detección de Plomo</h1>
+                    <p>La buena noticia:</p>
+                    <p class="subtitle">
+                        El envenenamiento por plomo es <strong>100% prevenible</strong>
+                    </p>
+                    <p class="subtitle">
+                        Siga estos pasos para que su hogar sea seguro contra el plomo
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contenido Principal -->
+        <section class="rights-content">
+            <div class="container">
+                <div class="rights-grid">
+                    
+                    <!-- Pasos para Prevención de Plomo -->
+                    <div class="rights-card">
+                        <h3>Pasos para Prevención de Plomo</h3>
+                        
+                        <h4>1. Consulta Médica</h4>
+                        <ul class="rights-list">
+                            <li>Hable con el médico de su hijo sobre un simple análisis de sangre de prueba de plomo</li>
+                            <li>Si está embarazada o amamantando, hable con su médico acerca de la exposición a fuentes de plomo</li>
+                        </ul>
+
+                        <h4>2. Prueba en el Hogar</h4>
+                        <ul class="rights-list">
+                            <li>Hable con su departamento de salud local sobre la prueba de plomo en la pintura y el polvo en su hogar si vive en una casa construida antes de 1978</li>
+                        </ul>
+
+                        <h4>3. Renovación Segura</h4>
+                        <ul class="rights-list">
+                            <li>Renovar de forma segura</li>
+                            <li>Las actividades comunes de renovación (como lijar, cortar, reemplazar ventanas y más) pueden generar polvo de plomo peligroso</li>
+                            <li>Si está planificando renovaciones, utilice contratistas certificados por la Agencia de Protección Ambiental</li>
+                        </ul>
+
+                        <h4>4. Seguridad de Juguetes</h4>
+                        <ul class="rights-list">
+                            <li>Quite los juguetes y las joyas de juguetes retirados del mercado de los niños y deséchelos según corresponda</li>
+                            <li>Manténgase actualizado sobre las retiradas actuales del mercado visitando el sitio web de la Comisión de Seguridad de Productos para el Consumidor: www.cpsc.gov</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Información de Contacto -->
+                <div class="contact-info-card">
+                    <h3>Información de Contacto</h3>
+                    <div class="contact-grid">
+                        <div class="contact-item">
+                            <div class="contact-row">
+                                <h4>Consultas Pediátricas</h4>
+                            </div>
+                            <div class="contact-row">
+                                <p class="contact-person">Yolanda A. Galarraga Ramirez MD PA</p>
+                            </div>
+                            <div class="contact-row">
+                                <p class="phone">305-649-7663</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-row">
+                                <h4>Departamento de Salud</h4>
+                            </div>
+                            <div class="contact-row">
+                                <p class="contact-person">Miami-Dade Health Department</p>
+                            </div>
+                            <div class="contact-row">
+                                <p class="phone">305-324-2400</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mensaje de Cierre -->
+                <div class="welcome-message">
+                    <p>Protegiendo la salud de nuestros niños</p>
+                    <p class="highlight">¡La prevención es la mejor medicina!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ============================================================================
+         FOOTER
+         ============================================================================ -->
+    
+    <div id="main-footer"></div>
+    <!-- ============================================================================
+         JAVASCRIPT PRINCIPAL
+         ============================================================================ -->
+    
+    <!-- Librería de internacionalización -->
+    <script src="src/scripts/lib/i18n.js?v=1.0.0"></script>
+    
+    <script src="src/scripts/components/MainHeader.js?v=2.3.0"></script>
+    <script src="src/scripts/components/MainFooter.js?v=2.1.0"></script>
+    <script src="src/scripts/main.js"></script>
+
+    
+</body>
+</html>

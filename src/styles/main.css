@@ -1,0 +1,104 @@
+/**
+ * Main CSS - Estilos principales de la landing page
+ * 
+ * Este archivo actúa como el punto de entrada principal para todos los estilos
+ * de la landing page de investigación médica. Sigue la metodología ITCSS
+ * (Inverted Triangle CSS) para una arquitectura CSS escalable y mantenible.
+ * 
+ * Arquitectura ITCSS:
+ * 1. Base: Variables, reset y tipografía base
+ * 2. Layout: Estructura y componentes de layout
+ * 3. Components: Componentes reutilizables
+ * 4. Utilities: Clases de utilidad y helpers
+ * 
+ * @author Galarraga Research Team
+ * @version 1.0.0
+ */
+
+/* ============================================================================
+   1. BASE - Variables, reset y tipografía
+   ============================================================================ */
+
+/* Variables CSS del sistema de diseño */
+@import './base/variables.css';
+
+/* Reset CSS para normalizar estilos entre navegadores */
+@import './base/reset.css';
+
+/* Sistema tipográfico y estilos de texto */
+@import './base/typography.css';
+
+/* ============================================================================
+   2. LAYOUT - Estructura y componentes de layout
+   ============================================================================ */
+
+/* Contenedores y estructura general */
+@import './layout/container.css';
+
+/* Sistema de grid responsive */
+@import './layout/grid.css';
+
+/* Header y navegación */
+@import './layout/header.css';
+
+/* Footer */
+@import './layout/footer.css';
+
+/* Secciones generales */
+@import './layout/sections.css';
+
+/* ============================================================================
+   3. COMPONENTS - Componentes reutilizables de la landing page
+   ============================================================================ */
+
+/* Botones con diferentes variantes y estados */
+@import './components/button.css';
+
+/* Tarjetas para contenido (publicaciones, testimonios, etc.) */
+@import './components/card.css';
+
+/* Sección hero principal */
+@import './components/hero.css';
+
+/* Sección de beneficios */
+@import './components/benefits.css';
+
+/* Componente de búsqueda */
+@import './components/search.css';
+
+/* Testimonios de usuarios */
+@import './components/testimonials.css';
+
+/* Call-to-action final */
+@import './components/cta.css';
+
+/* Sección de contacto */
+@import './components/contact.css';
+
+/* Componente de alineación del header */
+@import './components/header-alignment.css';
+
+/* Selector de idioma */
+@import './components/language-selector.css';
+
+/* ============================================================================
+   4. UTILITIES - Clases de utilidad y helpers
+   ============================================================================ */
+
+/* Espaciado (margins, paddings) */
+@import './utilities/spacing.css';
+
+/* Display y posicionamiento */
+@import './utilities/display.css';
+
+/* Colores de utilidad */
+@import './utilities/colors.css';
+
+/* Contraste y accesibilidad */
+@import './utilities/contrast.css';
+
+/* Animaciones y transiciones */
+@import './utilities/animations.css';
+
+/* Responsive design y breakpoints */
+@import './utilities/responsive.css';
