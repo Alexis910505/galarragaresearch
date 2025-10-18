@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificación de Deployment - Galarraga Research</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 800px;
+            width: 100%;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 32px;
+        }
+
+        .subtitle {
+            color: #7f8c8d;
+            margin-bottom: 30px;
+            font-size: 16px;
+        }
+
+        .check-item {
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            border: 2px solid #e0e0e0;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            transition: all 0.3s ease;
+        }
+
+        .check-item.success {
+            border-color: #27ae60;
+            background: #e8f8f0;
+        }
+
+        .check-item.error {
+            border-color: #e74c3c;
+            background: #fdeaea;
+        }
+
+        .check-item.warning {
+            border-color: #f39c12;
+            background: #fef5e7;
+        }
+
+        .icon {
+            font-size: 24px;
+            min-width: 30px;
+        }
+
+        .check-content {
+            flex: 1;
+        }
+
+        .check-title {
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: #2c3e50;
+        }
+
+        .check-description {
+            font-size: 14px;
+            color: #7f8c8d;
+        }
+
+        .summary {
+            margin-top: 30px;
+            padding: 25px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 10px;
+            color: white;
+            text-align: center;
+        }
+
+        .summary h2 {
+            margin-bottom: 10px;
+            font-size: 24px;
+        }
+
+        .summary p {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background: white;
+            color: #667eea;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            margin-top: 15px;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #7f8c8d;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        .spinner {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #667eea;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔍 Verificación de Deployment</h1>
+        <p class="subtitle">Comprobando que todo está listo para desplegar...</p>
+
+        <div id="checks">
+            <div class="loading">
+                <div class="spinner"></div>
+                <p>Ejecutando verificaciones...</p>
+            </div>
+        </div>
+
+        <div id="summary" style="display: none;"></div>
+    </div>
+
+    <script>
+        const checks = [
+            {
+                title: 'Archivo index.html',
+                description: 'Verificando archivo principal',
+                test: () => {
+                    return fetch('index.html')
+                        .then(res => res.ok)
+                        .catch(() => false);
+                }
+            },
+            {
+                title: 'Estilos CSS',
+                description: 'Verificando carga de estilos',
+                test: () => {
+                    return fetch('src/styles/main.css')
+                        .then(res => res.ok)
+                        .catch(() => false);
+                }
+            },
+            {
+                title: 'JavaScript principal',
+                description: 'Verificando scripts',
+                test: () => {
+                    return fetch('src/scripts/main.js')
+                        .then(res => res.ok)
+                        .catch(() => false);
+                }
+            },
+            {
+                title: 'Componentes',
+                description: 'Verificando componentes React/JS',
+                test: () => {
+                    return fetch('src/scripts/components/MainHeader.js')
+                        .then(res => res.ok)
+                        .catch(() => false);
+                }
+            },
+            {
+                title: 'Configuración Netlify',
+                description: 'Verificando netlify.toml',
+                test: () => {
+                    return fetch('netlify.toml')
+                        .then(res => res.ok)
+                        .catch(() => false);
+                }
+            },
+            {
+                title: 'Configuración Vercel',
+                description: 'Verificando vercel.json',
+                test: () => {
+                    return fetch('vercel.json')
+                        .then(res => res.ok)
+                        .catch(() => false);
+                }
+            },
+            {
+                title: 'GitHub Actions',
+                description: 'Verificando workflow de deploy',
+                test: () => {
+                    return fetch('.github/workflows/deploy.yml')
+                        .then(res => res.ok)
+                        .catch(() => false);
+                }
+            },
+            {
+                title: 'Guía de Deployment',
+                description: 'Verificando documentación',
+                test: () => {
+                    return fetch('DEPLOYMENT.md')
+                        .then(res => res.ok)
+                        .catch(() => false);
+                }
+            }
+        ];
+
+        async function runChecks() {
+            const checksContainer = document.getElementById('checks');
+            checksContainer.innerHTML = '';
+            
+            let passed = 0;
+            let failed = 0;
+
+            for (const check of checks) {
+                const result = await check.test();
+                
+                const checkItem = document.createElement('div');
+                checkItem.className = `check-item ${result ? 'success' : 'error'}`;
+                
+                checkItem.innerHTML = `
+                    <div class="icon">${result ? '✅' : '❌'}</div>
+                    <div class="check-content">
+                        <div class="check-title">${check.title}</div>
+                        <div class="check-description">${check.description}</div>
+                    </div>
+                `;
+                
+                checksContainer.appendChild(checkItem);
+                
+                if (result) passed++;
+                else failed++;
+            }
+
+            // Mostrar resumen
+            const summaryDiv = document.getElementById('summary');
+            const percentage = Math.round((passed / checks.length) * 100);
+            
+            let summaryHTML = '';
+            if (percentage === 100) {
+                summaryHTML = `
+                    <h2>🎉 ¡Todo Listo!</h2>
+                    <p>Tu proyecto está completamente configurado para el deployment.</p>
+                    <p>Puedes desplegar en Netlify, Vercel o GitHub Pages.</p>
+                    <a href="QUICKSTART.md" class="btn" target="_blank">Ver Guía de Deploy Rápido</a>
+                `;
+            } else if (percentage >= 75) {
+                summaryHTML = `
+                    <h2>⚠️ Casi Listo</h2>
+                    <p>${passed} de ${checks.length} verificaciones pasaron (${percentage}%).</p>
+                    <p>Revisa los errores antes de desplegar.</p>
+                    <a href="DEPLOYMENT.md" class="btn" target="_blank">Ver Guía Completa</a>
+                `;
+            } else {
+                summaryHTML = `
+                    <h2>❌ Requiere Atención</h2>
+                    <p>${passed} de ${checks.length} verificaciones pasaron (${percentage}%).</p>
+                    <p>Varios archivos necesarios no se encontraron.</p>
+                    <a href="DEPLOYMENT.md" class="btn" target="_blank">Ver Guía de Solución</a>
+                `;
+            }
+            
+            summaryDiv.innerHTML = summaryHTML;
+            summaryDiv.style.display = 'block';
+        }
+
+        // Ejecutar verificaciones al cargar
+        runChecks();
+    </script>
+</body>
+</html>
+

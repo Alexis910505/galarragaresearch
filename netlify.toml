@@ -1,0 +1,53 @@
+# Configuración de Netlify para Galarraga Research
+# https://docs.netlify.com/configure-builds/file-based-configuration/
+
+[build]
+  # Directorio de publicación
+  publish = "."
+  
+  # Comando de build (no necesario para sitio estático)
+  command = "echo 'Sitio estático listo para despliegue'"
+
+# Configuración de headers para seguridad y rendimiento
+[[headers]]
+  for = "/*"
+  [headers.values]
+    # Seguridad
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    X-XSS-Protection = "1; mode=block"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    
+    # Cache para assets estáticos
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/index.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+# Redirecciones para mejor SEO
+[[redirects]]
+  from = "/home"
+  to = "/"
+  status = 301
+  force = true
+
+# Página 404 personalizada
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 404
+
+# Configuración de entorno
+[context.production.environment]
+  NODE_VERSION = "18.0.0"
+
+[context.deploy-preview.environment]
+  NODE_VERSION = "18.0.0"
+

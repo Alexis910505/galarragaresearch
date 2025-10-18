@@ -8,7 +8,9 @@
     "start": "npm run dev",
     "dev": "npx http-server . -p 3000 -o",
     "serve": "npx http-server . -p 8080",
-    "clean": "rimraf dist"
+    "clean": "rimraf dist",
+    "deploy:netlify": "netlify deploy --prod --dir .",
+    "deploy:vercel": "vercel --prod"
   },
   "keywords": [
     "investigación médica",

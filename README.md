@@ -33,6 +33,36 @@ npm start
 npm run serve
 ```
 
+## 🌐 Despliegue (Hosting)
+
+### Deploy Rápido (5 minutos)
+Ver **[QUICKSTART.md](QUICKSTART.md)** para instrucciones rápidas
+
+### Opciones de Hosting
+
+#### 1. Netlify (Recomendado) ⭐
+```bash
+# Método 1: Drag & Drop
+# Ve a https://app.netlify.com/drop y arrastra la carpeta
+
+# Método 2: Deploy desde Git
+# Conecta tu repositorio en https://app.netlify.com
+```
+
+#### 2. Vercel ⚡
+```bash
+# Ve a https://vercel.com/new
+# Importa tu repositorio y despliega
+```
+
+#### 3. GitHub Pages 📦
+```bash
+# Habilita GitHub Pages en Settings → Pages
+# El workflow ya está configurado en .github/workflows/deploy.yml
+```
+
+Ver **[DEPLOYMENT.md](DEPLOYMENT.md)** para guía completa de despliegue
+
 ## 📁 Estructura del Proyecto
 
 ```
