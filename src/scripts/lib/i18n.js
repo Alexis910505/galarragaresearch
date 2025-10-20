@@ -5,24 +5,24 @@
 
 class I18nManager {
     constructor() {
-        this.currentLanguage = this.getStoredLanguage() || 'es';
+        this.currentLanguage = this.getStoredLanguage() || 'en';
         this.translations = {};
-        this.fallbackLanguage = 'es';
+        this.fallbackLanguage = 'en';
         this.observers = [];
         
-        // Cargar traducciones
+        // Load translations
         this.loadTranslations();
     }
 
     /**
-     * Obtiene el idioma almacenado en localStorage
+     * Get stored language from localStorage
      */
     getStoredLanguage() {
         try {
-            return localStorage.getItem('galarraga-language') || 'es';
+            return localStorage.getItem('galarraga-language') || 'en';
         } catch (error) {
-            console.warn('No se pudo acceder a localStorage:', error);
-            return 'es';
+            console.warn('Could not access localStorage:', error);
+            return 'en';
         }
     }
 
@@ -190,10 +190,10 @@ class I18nManager {
     }
 
     /**
-     * Alterna entre idiomas
+     * Toggle between languages
      */
     toggleLanguage() {
-        const newLang = this.currentLanguage === 'es' ? 'en' : 'es';
+        const newLang = this.currentLanguage === 'en' ? 'es' : 'en';
         this.setLanguage(newLang);
         return newLang;
     }
