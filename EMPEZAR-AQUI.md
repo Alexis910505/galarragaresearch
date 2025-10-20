@@ -16,19 +16,33 @@ git push origin main
 
 ---
 
-## Paso 2: Habilitar GitHub Pages
+## Paso 2: Habilitar GitHub Pages ⚠️ IMPORTANTE
+
+**⚠️ Este paso es OBLIGATORIO antes del primer deploy**
 
 1. Ve a tu repositorio en GitHub
-2. **Settings** → **Pages**
-3. En **Source**, selecciona: **"GitHub Actions"**
+2. Click en **Settings** (⚙️) en la barra superior
+3. En el menú lateral izquierdo, click en **Pages**
+4. En **"Source"**, selecciona: **"GitHub Actions"**
+5. ✅ La configuración se guarda automáticamente
+
+**Si no haces este paso, el workflow fallará con error "Not Found"**
+
+📖 **¿Tienes problemas?** → [SOLUCION-ERROR-DEPLOY.md](SOLUCION-ERROR-DEPLOY.md)
 
 ---
 
-## Paso 3: ¡Esperar!
+## Paso 3: Re-ejecutar el Workflow (si ya hiciste push)
 
-- Ve a la pestaña **Actions**
-- Espera 2-3 minutos
-- ✅ Verás una marca verde cuando termine
+Si ya hiciste push antes de habilitar Pages:
+
+1. Ve a la pestaña **Actions** en tu repositorio
+2. Click en el workflow fallido
+3. Click en **"Re-run all jobs"**
+4. ¡Espera 2-3 minutos!
+5. ✅ Verás una marca verde cuando termine
+
+**Si aún no has hecho push, el workflow se ejecutará automáticamente al hacer push.**
 
 ---
 
