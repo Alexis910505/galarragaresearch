@@ -1,4 +1,4 @@
- /**
+/**
  * MainHeader Component
  * Componente reutilizable para el header de la página principal
  * 
@@ -138,9 +138,9 @@ class MainHeader {
         return this.options.links.map(link => `
             <li class="header__nav-item">
                 <a href="${link.href}" 
-                   class="header__nav-link ${link.current ? 'header__nav-link--current' : ''}"
-                   ${link.current ? 'aria-current="page"' : ''}
-                   ${link.translateKey ? `data-translate="${link.translateKey}"` : ''}>
+                class="header__nav-link ${link.current ? 'header__nav-link--current' : ''}"
+                ${link.current ? 'aria-current="page"' : ''}
+                ${link.translateKey ? `data-translate="${link.translateKey}"` : ''}>
                     ${link.text}
                 </a>
             </li>
