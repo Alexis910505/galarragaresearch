@@ -1,5 +1,5 @@
 {
-  "name": "galarraga-research",
+  "name": "galarragaresearch",
   "version": "1.0.0",
   "description": "Landing page de investigación médica - Accede a investigaciones médicas confiables",
   "main": "index.html",
@@ -26,15 +26,16 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/galarragaresearch/website.git"
+    "url": "https://github.com/Alexis910505/galarragaresearch.git"
   },
   "bugs": {
-    "url": "https://github.com/galarragaresearch/website/issues"
+    "url": "https://github.com/Alexis910505/galarragaresearch/issues"
   },
   "homepage": "https://galarragaresearch.com",
   "devDependencies": {
     "http-server": "^14.1.1",
-    "rimraf": "^5.0.5"
+    "rimraf": "^5.0.5",
+    "vercel": "^34.0.0"
   },
   "browserslist": [
     "> 1%",
