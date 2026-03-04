@@ -55,6 +55,19 @@
       "cta_primary": "Buscar Ahora",
       "cta_secondary": "Explorar Base de Datos"
     },
+    "mission": {
+      "title": "Nuestra misión",
+      "intro": "En Finlay, nuestro trabajo se enfoca en la realización de estudios clínicos diseñados para analizar la seguridad y efectividad de nuevos medicamentos y tratamientos médicos. Cada ensayo se desarrolla siguiendo protocolos estrictos con el objetivo de mantener altos estándares de calidad en la atención médica y contribuir al avance de nuevas alternativas terapéuticas.",
+      "purpose": "Nuestro propósito es impulsar investigación científica sólida y moderna que permita encontrar soluciones innovadoras para diversas enfermedades complejas. Para lograrlo, trabajamos en conjunto con investigadores, médicos y especialistas del sector salud, transformando los descubrimientos científicos en tratamientos y prácticas médicas que puedan aplicarse en la vida real.",
+      "clinical_research": {
+        "title": "Investigación clínica",
+        "description": "Llevamos a cabo estudios clínicos destinados a evaluar nuevos fármacos y terapias, asegurando que cumplan con rigurosos criterios de seguridad, eficacia y calidad antes de su implementación."
+      },
+      "educational_programs": {
+        "title": "Programas educativos",
+        "description": "También desarrollamos iniciativas de educación y divulgación dirigidas tanto a profesionales de la salud como a la comunidad, con el objetivo de fomentar el conocimiento y la participación en la investigación médica."
+      }
+    },
     "benefits": {
       "title": "¿Por qué elegir Galarraga Research?",
       "subtitle": "Herramientas avanzadas para profesionales de la salud e investigadores",
@@ -73,7 +86,7 @@
     },
     "demo": {
       "title": "Prueba Nuestro Buscador",
-      "subtitle": "Explora nuestra base de datos con más de 50,000 artículos médicos",
+      "subtitle": "Explora nuestra base de datos",
       "placeholder": "Busca por palabra clave: diabetes, cáncer, COVID-19...",
       "button": "Buscar",
       "results_title": "Resultados de búsqueda",
@@ -109,13 +122,13 @@
     },
     "contact": {
       "title": "Contacto",
-      "subtitle": "¿Tienes preguntas sobre nuestros servicios de pediatría infantil? Estamos aquí para cuidar la salud de tu pequeño.",
+      "subtitle": "¿Tienes preguntas sobre nuestros servicios? Estamos aquí para cuidar tu salud.",
       "clinic": {
-        "title": "Clínica Pediátrica",
+        "title": "CENTRO DE ENSAYO CLÍNICO",
         "address": "1996 SW 1st St.\nMiami FL 33135"
       },
       "consultations": {
-        "title": "Consultas Pediátricas",
+        "title": "CENTRO DE LLAMADAS",
         "phone": "PH. 305.649.7663"
       },
       "fax": {
@@ -123,12 +136,8 @@
         "number": "FAX. 305.541.2735"
       },
       "email": {
-        "title": "Email Pediátrico",
+        "title": "Email",
         "address": "info@galarragamd.com"
-      },
-      "portal": {
-        "title": "Portal Pediátrico",
-        "url": "www.galarragamd.com"
       },
       "hours": {
         "title": "Horarios de Atención",

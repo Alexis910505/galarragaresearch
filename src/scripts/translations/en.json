@@ -55,6 +55,19 @@
       "cta_primary": "Search Now",
       "cta_secondary": "Explore Database"
     },
+    "mission": {
+      "title": "Our mission",
+      "intro": "At Finlay, our work focuses on conducting clinical studies designed to analyze the safety and effectiveness of new drugs and medical treatments. Each trial is developed following strict protocols with the goal of maintaining high standards of quality in healthcare and contributing to the advancement of new therapeutic alternatives.",
+      "purpose": "Our purpose is to drive solid, modern scientific research that enables finding innovative solutions for various complex diseases. To achieve this, we work together with researchers, physicians, and healthcare specialists, transforming scientific discoveries into treatments and medical practices that can be applied in real life.",
+      "clinical_research": {
+        "title": "Clinical research",
+        "description": "We conduct clinical studies aimed at evaluating new drugs and therapies, ensuring they meet rigorous safety, efficacy, and quality criteria before implementation."
+      },
+      "educational_programs": {
+        "title": "Educational programs",
+        "description": "We also develop education and outreach initiatives aimed at both healthcare professionals and the community, with the goal of fostering knowledge and participation in medical research."
+      }
+    },
     "benefits": {
       "title": "Why Choose Galarraga Research?",
       "subtitle": "Advanced tools for healthcare professionals and researchers",
@@ -73,7 +86,7 @@
     },
     "demo": {
       "title": "Try Our Search Engine",
-      "subtitle": "Explore our database with over 50,000 medical articles",
+      "subtitle": "Explore our database",
       "placeholder": "Search by keyword: diabetes, cancer, COVID-19...",
       "button": "Search",
       "results_title": "Search results",
@@ -109,13 +122,13 @@
     },
     "contact": {
       "title": "Contact",
-      "subtitle": "Do you have questions about our pediatric services? We're here to care for your little one's health.",
+      "subtitle": "Do you have questions about our services? We're here to take care of your health.",
       "clinic": {
-        "title": "Pediatric Clinic",
+        "title": "CLINICAL TRIAL SITE",
         "address": "1996 SW 1st St.\nMiami FL 33135"
       },
       "consultations": {
-        "title": "Pediatric Consultations",
+        "title": "CALL CENTER",
         "phone": "PH. 305.649.7663"
       },
       "fax": {
@@ -123,12 +136,8 @@
         "number": "FAX. 305.541.2735"
       },
       "email": {
-        "title": "Pediatric Email",
+        "title": "Email",
         "address": "info@galarragamd.com"
-      },
-      "portal": {
-        "title": "Pediatric Portal",
-        "url": "www.galarragamd.com"
       },
       "hours": {
         "title": "Office Hours",

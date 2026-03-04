@@ -99,6 +99,10 @@
                 grid-template-columns: 1fr !important;
                 gap: 30px !important;
             }
+            /* Misión: una columna en móvil */
+            .mission-grid {
+                grid-template-columns: 1fr !important;
+            }
         }
         
         @media (max-width: 480px) {
@@ -201,7 +205,7 @@
                 </div>
             </div>
         </section>
-
+        
         <!-- Demo Section -->
         <section id="demo" class="search" aria-labelledby="demo-title">
             <div class="search__container">
@@ -269,7 +273,36 @@
                 </div>
             </div>
         </section>
-
+        
+        <!-- Mission Section -->
+        <section id="mision" class="section section--bg-inverse" aria-labelledby="mission-title" style="background: radial-gradient(circle at top left, #f0f7ff 0%, #f8fafc 40%, #ffffff 100%) !important; color: #2c3e50 !important; padding: 80px 0 !important;">
+            <div class="container" style="max-width: 1000px !important; margin: 0 auto !important;">
+                <h2 id="mission-title" class="section__title" data-translate="home.mission.title" style="color: #1f2933 !important; font-size: 34px !important; font-weight: 800 !important; margin-bottom: 20px !important; text-align: center !important;">Nuestra misión</h2>
+                <p class="section__subtitle" data-translate="home.mission.intro" style="color: #4b5563 !important; font-size: 17px !important; line-height: 1.8 !important; margin-bottom: 16px !important; text-align: center !important; max-width: 820px !important; margin-left: auto !important; margin-right: auto !important;">En Finlay, nuestro trabajo se enfoca en la realización de estudios clínicos diseñados para analizar la seguridad y efectividad de nuevos medicamentos y tratamientos médicos. Cada ensayo se desarrolla siguiendo protocolos estrictos con el objetivo de mantener altos estándares de calidad en la atención médica y contribuir al avance de nuevas alternativas terapéuticas.</p>
+                <p data-translate="home.mission.purpose" style="color: #4b5563 !important; font-size: 17px !important; line-height: 1.8 !important; margin-bottom: 36px !important; text-align: center !important; max-width: 820px !important; margin-left: auto !important; margin-right: auto !important;">Nuestro propósito es impulsar investigación científica sólida y moderna que permita encontrar soluciones innovadoras para diversas enfermedades complejas. Para lograrlo, trabajamos en conjunto con investigadores, médicos y especialistas del sector salud, transformando los descubrimientos científicos en tratamientos y prácticas médicas que puedan aplicarse en la vida real.</p>
+                <div class="mission-grid" style="display: grid !important; grid-template-columns: 1.1fr 1.1fr !important; gap: 28px !important; align-items: stretch !important;">
+                    <div class="card card--benefit" style="padding: 26px 24px !important; border-radius: 16px !important; background: #ffffff !important; box-shadow: 0 18px 45px rgba(15, 23, 42, 0.12) !important; border: 1px solid rgba(148, 163, 184, 0.25) !important;">
+                        <div class="card__icon" style="margin-bottom: 14px !important;">
+                            <span style="width: 40px !important; height: 40px !important; border-radius: 999px !important; display: inline-flex !important; align-items: center !important; justify-content: center !important; background: rgba(52, 152, 219, 0.12) !important; color: #1f6fb2 !important;">
+                                <i class="fas fa-flask" aria-hidden="true" style="font-size: 19px !important;"></i>
+                            </span>
+                        </div>
+                        <h3 class="card__title" data-translate="home.mission.clinical_research.title" style="color: #111827 !important; font-size: 18px !important; font-weight: 700 !important; margin-bottom: 10px !important;">Investigación clínica</h3>
+                        <p class="card__description" data-translate="home.mission.clinical_research.description" style="color: #4b5563 !important; font-size: 15px !important; line-height: 1.7 !important; margin: 0 !important;">Llevamos a cabo estudios clínicos destinados a evaluar nuevos fármacos y terapias, asegurando que cumplan con rigurosos criterios de seguridad, eficacia y calidad antes de su implementación.</p>
+                    </div>
+                    <div class="card card--benefit" style="padding: 26px 24px !important; border-radius: 16px !important; background: #ffffff !important; box-shadow: 0 18px 45px rgba(15, 23, 42, 0.12) !important; border: 1px solid rgba(148, 163, 184, 0.25) !important;">
+                        <div class="card__icon" style="margin-bottom: 14px !important;">
+                            <span style="width: 40px !important; height: 40px !important; border-radius: 999px !important; display: inline-flex !important; align-items: center !important; justify-content: center !important; background: rgba(16, 185, 129, 0.12) !important; color: #047857 !important;">
+                                <i class="fas fa-graduation-cap" aria-hidden="true" style="font-size: 19px !important;"></i>
+                            </span>
+                        </div>
+                        <h3 class="card__title" data-translate="home.mission.educational_programs.title" style="color: #111827 !important; font-size: 18px !important; font-weight: 700 !important; margin-bottom: 10px !important;">Programas educativos</h3>
+                        <p class="card__description" data-translate="home.mission.educational_programs.description" style="color: #4b5563 !important; font-size: 15px !important; line-height: 1.7 !important; margin: 0 !important;">También desarrollamos iniciativas de educación y divulgación dirigidas tanto a profesionales de la salud como a la comunidad, con el objetivo de fomentar el conocimiento y la participación en la investigación médica.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
         <!-- CTA Section -->
         <section class="section section--bg-gradient" aria-labelledby="cta-title">
             <div class="container">
@@ -317,7 +350,7 @@
                         <!-- Columna 1 -->
                         <div>
                             <div style="margin-bottom: 25px !important;">
-                                <h3 data-translate="home.contact.clinic.title" style="color: #2c3e50 !important; font-size: 16px !important; font-weight: 700 !important; margin-bottom: 8px !important; text-transform: uppercase !important; letter-spacing: 0.5px !important;">🏥 Clínica Pediátrica</h3>
+                                <h3 data-translate="home.contact.clinic.title" style="color: #2c3e50 !important; font-size: 16px !important; font-weight: 700 !important; margin-bottom: 8px !important; text-transform: uppercase !important; letter-spacing: 0.5px !important;">🏥 CENTRO DE ENSAYO CLÍNICO</h3>
                                 <p style="color: #34495e !important; font-size: 15px !important; font-weight: 500 !important; line-height: 1.5 !important; margin: 0 !important;">1996 SW 1st St.<br>Miami FL 33135</p>
                             </div>
 
@@ -337,11 +370,6 @@
                             <div style="margin-bottom: 25px !important;">
                                 <h3 data-translate="home.contact.email.title" style="color: #2c3e50 !important; font-size: 16px !important; font-weight: 700 !important; margin-bottom: 8px !important; text-transform: uppercase !important; letter-spacing: 0.5px !important;">✉️ Email Pediátrico</h3>
                                 <p style="color: #34495e !important; font-size: 15px !important; font-weight: 500 !important; line-height: 1.5 !important; margin: 0 !important;">info@galarragamd.com</p>
-                            </div>
-
-                            <div style="margin-bottom: 25px !important;">
-                                <h3 data-translate="home.contact.portal.title" style="color: #2c3e50 !important; font-size: 16px !important; font-weight: 700 !important; margin-bottom: 8px !important; text-transform: uppercase !important; letter-spacing: 0.5px !important;">🌐 Portal Pediátrico</h3>
-                                <p style="color: #34495e !important; font-size: 15px !important; font-weight: 500 !important; line-height: 1.5 !important; margin: 0 !important;">www.galarragamd.com</p>
                             </div>
 
                             <div style="margin-bottom: 25px !important;">
