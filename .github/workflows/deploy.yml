@@ -1,9 +1,7 @@
 name: Deploy to GitHub Pages
 
+# Solo manual: evita error en cada push. Producción está en Vercel.
 on:
-  push:
-    branches:
-      - main
   workflow_dispatch:
 
 permissions:
