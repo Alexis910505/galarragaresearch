@@ -43,14 +43,15 @@ class I18nManager {
     async loadTranslations() {
         try {
             // Intentar cargar desde archivos JSON
-            const esResponse = await fetch('/src/scripts/translations/es.json');
+            const base = 'https://cdn.jsdelivr.net/gh/Alexis910505/galarragaresearch@main/src/scripts/translations';
+            const esResponse = await fetch(base + '/es.json');
             if (esResponse.ok) {
                 this.translations.es = await esResponse.json();
             } else {
                 throw new Error('No se pudo cargar es.json');
             }
             
-            const enResponse = await fetch('/src/scripts/translations/en.json');
+            const enResponse = await fetch(base + '/en.json');
             if (enResponse.ok) {
                 this.translations.en = await enResponse.json();
             } else {

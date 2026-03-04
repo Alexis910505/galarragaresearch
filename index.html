@@ -69,8 +69,8 @@
          ESTILOS CSS PRINCIPALES
          ============================================================================ -->
     
-    <!-- Archivo principal de estilos de la landing page -->
-    <link rel="stylesheet" href="/src/styles/main.css">
+    <!-- Archivo principal de estilos (CDN desde GitHub para evitar problemas en Vercel) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Alexis910505/galarragaresearch@main/src/styles/main.css">
     
     
     <!-- CSS para mapa responsivo -->
@@ -438,12 +438,11 @@
          JAVASCRIPT PRINCIPAL
          ============================================================================ -->
     
-    <!-- Librería de internacionalización -->
-    <script src="/src/scripts/lib/i18n.js?v=1.0.1"></script>
-    
-    <script src="/src/scripts/components/MainHeader.js?v=3.0.1"></script>
-    <script src="/src/scripts/components/MainFooter.js?v=3.0.1"></script>
-    <script src="/src/scripts/main.js?v=1.0.1"></script>
+    <!-- Scripts desde CDN (GitHub) para que carguen aunque Vercel no sirva src/ -->
+    <script src="https://cdn.jsdelivr.net/gh/Alexis910505/galarragaresearch@main/src/scripts/lib/i18n.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Alexis910505/galarragaresearch@main/src/scripts/components/MainHeader.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Alexis910505/galarragaresearch@main/src/scripts/components/MainFooter.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Alexis910505/galarragaresearch@main/src/scripts/main.js"></script>
     
     
 </body>
