@@ -5,6 +5,7 @@
   "main": "index.html",
   "type": "module",
   "scripts": {
+    "build": "echo 'Static site - no build step'",
     "start": "npm run dev",
     "dev": "npx http-server . -p 3000 -o",
     "serve": "npx http-server . -p 8080",
